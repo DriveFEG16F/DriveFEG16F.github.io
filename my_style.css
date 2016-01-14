@@ -41,7 +41,7 @@
 }
 .menu li a:hover
 {
-	background-color: #212A3F;
+	background-color: #666666;
 	color:#fff;
 }
 .menu-button
@@ -64,7 +64,7 @@
 		padding: 180px 0 120px;
 		text-align: center;
 		width: 100%;
-		height: 100%;
+		height: 100vh;
 		float: left;
 
 }
@@ -136,7 +136,7 @@
 .text-box p span a
 {
 	text-decoration: none;
-	color: #8AB839;
+	color: #666666;
 	font-size: 15px;
 }
 .text-box p a.link-button
@@ -168,7 +168,7 @@
 	font-weight: 300;
 	font-size: 42px;
 	text-align: center;
-	color: #8AB839;
+	color: #666666;
 	text-transform: uppercase;
 }
 .desc p
@@ -179,18 +179,18 @@
 	font-weight: 400;
 	color: #2E2E2E;
 	font-size: 16px;
-	text-align: center;
+	text-align: left;
 	line-height: 25px;
 	
 }
 .desc p a
 {
 	text-decoration: none;
-	color: #8ab839;
+	color: #666666;
 }
 .features
 {
-	background: #8ab839;
+	background: #666666;
 	padding: 60px 0px;
 }
 .features-text
@@ -283,12 +283,16 @@ h2.features-text::after {
 }
 .btneff
 {
-	background-color: #8ab839;
+	background-color: #666666;
 border: none;
 color: #fff;
 padding: 13px 0px;
 width: 100% !important;
 font-size: 17px;
+}
+.application{
+	background: #ffffff;
+	padding: 60px 0px;
 }
 .work-list{
 	padding: 60px 0px;
@@ -306,7 +310,7 @@ h2.portfolio-text::after {
     margin: 17px auto 0px;
     width: 80px;
     height: 1px;
-    background: #8ab839 none repeat scroll 0% 0%;
+    background: #666666 none repeat scroll 0% 0%;
     content: "";
 }
 .work-list a .featured-img
@@ -346,7 +350,7 @@ h2.portfolio-text::after {
 }
 .image-hover:hover i
 {	display: block;
-	color: #212A3F;
+	color: #666666;
 }
 .work-list a h3 {
     text-align: center;
@@ -355,7 +359,7 @@ h2.portfolio-text::after {
     float: left;
     width: 100%;
     font-weight: 600;
-	background: #8ab839;
+	background: #666666;
 	color:#fff;
 	margin:0px;
 	font-family: 'Roboto', sans-serif;
@@ -377,7 +381,7 @@ h2.portfolio-text::after {
 }
 .nav li a:focus
 {
-	background: #212A3F;
+	background: #666666;
 	color: #fff;
 }
 .nav li a:active
@@ -406,14 +410,14 @@ h2.portfolio-text::after {
 .counter-item i
 {
 	font-size: 40px;
-	color: #8ab839;
+	color: #666666;
 }
 .timer
 {
 	margin-top: 5px;
 	font-weight: 700;
 	font-size: 50px;
-	color: #8ab839;
+	color: #666666;
 }
 .counter-item h5
 {
@@ -439,7 +443,7 @@ h2.portfolio-text::after {
     padding: 12px 12px;
     color: #555;
     background-color: rgba(33, 42, 63, 0.2);
-    color: #212A3F;
+    color: #666666;
     height: auto !important;
     margin-bottom: 30px;
     font-family: 'Poppins', sans-serif;
@@ -451,7 +455,7 @@ h2.portfolio-text::after {
 }
 .btn-sub {
     color: #fff;
-    background-color: #8AB839;
+    background-color: #666666;
     border-color: #fff;
     font-size: 18px;
     padding: 10px 30px;
@@ -461,12 +465,12 @@ h2.portfolio-text::after {
 	height: 150px;
 }
 input[placeholder], [placeholder], *[placeholder] {
-    color: #212A3F !important;
+    color: #666666 !important;
 }
 .address p i {
     padding-right: 10px;
     font-size: 15px;
-    color: #8AB839;
+    color: #666666;
 }
 .footer {
     margin: 20px 0px 10px;
@@ -480,7 +484,7 @@ input[placeholder], [placeholder], *[placeholder] {
 	font-family: 'Poppins', sans-serif;
 }
 .footer p a {
- color: #8AB839;
+ color: #666666;
  font-family: 'Poppins', sans-serif;
 }
 
