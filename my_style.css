@@ -1,6 +1,27 @@
 @charset "utf-8";
 /* CSS Document */
 
+@font-face {
+    font-family: helveticaneueltstd-hv;
+    src: url("fonts/helveticaneueltstd-hv.woff") format('woff');
+}
+@font-face {
+    font-family: helveticaneueltstd-hvcn;
+    src: url("fonts/helveticaneueltstd-hvcn.woff") format('woff');
+}
+@font-face {
+    font-family: helveticaneueltstd-lt;
+    src: url("fonts/helveticaneueltstd-lt.woff") format('woff');
+}
+@font-face {
+    font-family: helveticaneueltstd-ltcn;
+    src: url("fonts/helveticaneueltstd-ltcn.woff") format('woff');
+}
+@font-face {
+    font-family: helveticaneueltstd-roman;
+    src: url("fonts/helveticaneueltstd-roman.woff") format('woff');
+}
+
 
 .header
 {
@@ -14,6 +35,7 @@
 .logo
 {
 	color: #ffffff;
+	font-family: helveticaneueltstd-hvcn;
 	font-weight: 100;
 	font-size: 30px;
 	padding: 0px !important;
@@ -41,7 +63,7 @@
 }
 .menu li a:hover
 {
-	background-color: #666666;
+	background-color: #dddddd;
 	color:#fff;
 }
 .menu-button
@@ -136,7 +158,7 @@
 .text-box p span a
 {
 	text-decoration: none;
-	color: #666666;
+	color: #dddddd;
 	font-size: 15px;
 }
 .text-box p a.link-button
@@ -168,7 +190,7 @@
 	font-weight: 300;
 	font-size: 42px;
 	text-align: center;
-	color: #666666;
+	color: #dddddd;
 	text-transform: uppercase;
 }
 .desc p
@@ -186,23 +208,23 @@
 .desc p a
 {
 	text-decoration: none;
-	color: #666666;
+	color: #dddddd;
 }
 .features
 {
-	background: #666666;
+	background: #dddddd;
 	padding: 60px 0px;
 }
 .features-text
 {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'helveticaneueltstd-hv', sans-serif;
 	font-weight: 700;
 	letter-spacing: 5px;
 	margin-bottom:30px;
 	margin-top:30px;
 }
 h2.features-text::after {
-    display: block;
+    /*display: block;*/
     margin: 17px auto 0px;
     width: 80px;
     height: 1px;
@@ -283,7 +305,7 @@ h2.features-text::after {
 }
 .btneff
 {
-	background-color: #666666;
+	background-color: #dddddd;
 border: none;
 color: #fff;
 padding: 13px 0px;
@@ -310,7 +332,7 @@ h2.portfolio-text::after {
     margin: 17px auto 0px;
     width: 80px;
     height: 1px;
-    background: #666666 none repeat scroll 0% 0%;
+    background: #dddddd none repeat scroll 0% 0%;
     content: "";
 }
 .work-list a .featured-img
@@ -350,7 +372,7 @@ h2.portfolio-text::after {
 }
 .image-hover:hover i
 {	display: block;
-	color: #666666;
+	color: #dddddd;
 }
 .work-list a h3 {
     text-align: center;
@@ -359,7 +381,7 @@ h2.portfolio-text::after {
     float: left;
     width: 100%;
     font-weight: 600;
-	background: #666666;
+	background: #dddddd;
 	color:#fff;
 	margin:0px;
 	font-family: 'Roboto', sans-serif;
@@ -381,7 +403,7 @@ h2.portfolio-text::after {
 }
 .nav li a:focus
 {
-	background: #666666;
+	background: #dddddd;
 	color: #fff;
 }
 .nav li a:active
@@ -410,14 +432,14 @@ h2.portfolio-text::after {
 .counter-item i
 {
 	font-size: 40px;
-	color: #666666;
+	color: #dddddd;
 }
 .timer
 {
 	margin-top: 5px;
 	font-weight: 700;
 	font-size: 50px;
-	color: #666666;
+	color: #dddddd;
 }
 .counter-item h5
 {
@@ -443,7 +465,7 @@ h2.portfolio-text::after {
     padding: 12px 12px;
     color: #555;
     background-color: rgba(33, 42, 63, 0.2);
-    color: #666666;
+    color: #dddddd;
     height: auto !important;
     margin-bottom: 30px;
     font-family: 'Poppins', sans-serif;
@@ -455,7 +477,7 @@ h2.portfolio-text::after {
 }
 .btn-sub {
     color: #fff;
-    background-color: #666666;
+    background-color: #dddddd;
     border-color: #fff;
     font-size: 18px;
     padding: 10px 30px;
@@ -465,12 +487,12 @@ h2.portfolio-text::after {
 	height: 150px;
 }
 input[placeholder], [placeholder], *[placeholder] {
-    color: #666666 !important;
+    color: #dddddd !important;
 }
 .address p i {
     padding-right: 10px;
     font-size: 15px;
-    color: #666666;
+    color: #dddddd;
 }
 .footer {
     margin: 20px 0px 10px;
@@ -484,7 +506,7 @@ input[placeholder], [placeholder], *[placeholder] {
 	font-family: 'Poppins', sans-serif;
 }
 .footer p a {
- color: #666666;
+ color: #dddddd;
  font-family: 'Poppins', sans-serif;
 }
 
@@ -555,17 +577,19 @@ input[placeholder], [placeholder], *[placeholder] {
 }
 
 .circle {
-	margin-left: auto;
-    margin-right: auto;
     border-radius: 50%;
     width: 100%;
     padding-top: 50%;
+    padding-right: 50%;
     padding-bottom: 50%;
+    padding-left: 50%;;
     position: relative;
+    
 }
-
 .circle-border {
-	border: 1px solid black;
+	border: 4px;
+	border-style: solid;
+    border-color: #aaaaaa;
 }
 .circle-solid{
 	background-color: #00C0E0;
@@ -585,4 +609,39 @@ input[placeholder], [placeholder], *[placeholder] {
 .circle-shoe{
 	background-size: cover;
 	background-image:url("images/icon-shoe-01.png");
+}
+/* Smart Textile Technology */
+.circle-textile{
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+.circle-designable{
+	background-size: cover;
+	background-image:url("images/icon-designable-01.png");
+}
+.circle-durability{
+	background-size: cover;
+	background-image:url("images/icon-durability-01.png");
+}
+.circle-non-metallic{
+	background-size: cover;
+	background-image:url("images/icon-non-metallic-01.png");
+}
+.circle-pliability{
+	background-size: cover;
+	background-image:url("images/icon-pliability-01.png");
+}
+.circle-placement{
+	background-size: cover;
+	background-image:url("images/icon-unrestricted-placement-01.png");
+}
+.circle-water{
+	background-size: cover;
+	background-image:url("images/icon-water-proof-01.png");
+}
+.circle-text-box p {
+	text-align: center;
+	font-family: 'helveticaneueltstd-roman', sans-serif;
+	font-size: 12px;
+	color: #2E2E2E;
 }
