@@ -76,19 +76,53 @@
 .backg
 {	
 	background-attachment:fixed;
-		background-color: #645862;
-		background-image:  url("images/smartcloth.png");
-		background-position: top center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		color: white;
-		cursor: default;
-		padding: 180px 0 120px;
-		text-align: center;
-		width: 100%;
-		height: 100vh; /*match browser size*/
-		float: left;
+	background-color: #645862;
+	background-image:  url("images/smartcloth.png");
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	cursor: default;
+	padding: 180px 0 120px;
+	text-align: center;
+	width: 100%;
+	height: 100vh; /*match browser size*/
+	float: left;
 
+}
+.carousel-img-award{
+	background-attachment:fixed;
+	background-color: #000000;
+	background-image:  url("images/smartcloth.png");
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100vh; /*match browser size*/	
+}
+.carousel-img-solution{
+	background-attachment:fixed;
+	background-color: #000000;
+	background-image:  url("images/cut_09_1.png");
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100vh; /*match browser size*/	
+}
+.carousel-img-application{
+	background-attachment:fixed;
+	background-color: #000000;
+	background-image:  url("images/mes_0104_03.png");
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100vh; /*match browser size*/	
+}
+.indicators-position{
+  position: absolute;
+  bottom: 100px !important;
 }
 @-moz-keyframes reveal-banner { 0% { opacity: 0; } 100% { opacity: 1; } }
 @-webkit-keyframes reveal-banner { 0% { opacity: 0; } 100% { opacity: 1; } }
@@ -611,9 +645,11 @@ input[placeholder], [placeholder], *[placeholder] {
 	background-image:url("images/icon-shoe-01.png");
 }
 /* Smart Textile Technology */
+.
 .circle-textile{
 	margin-top: 10%;
 	margin-bottom: 10%;
+	float:left;
 }
 .circle-designable{
 	background-size: cover;
@@ -639,9 +675,26 @@ input[placeholder], [placeholder], *[placeholder] {
 	background-size: cover;
 	background-image:url("images/icon-water-proof-01.png");
 }
-.circle-text-box p {
+.circle-text-box p{
 	text-align: center;
 	font-family: 'helveticaneueltstd-roman', sans-serif;
 	font-size: 12px;
 	color: #2E2E2E;
+	min-height: 80px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
