@@ -89,14 +89,24 @@
 	float: left;
 
 }
-.backg-application
-{	
-	background-image:  url("images/FENC_dynafeed.mp4.00_00_07_22.Still001.png");
-	height: auto !important;
-}
 .backg-solution
 {	
-	background-image:  url("images/mes_0104_03_cut.mp4.00_00_38_00.Still006.png");
+	background-image:  url("images/background-solution-01.png");
+	height: auto !important;
+}
+.backg-application
+{	
+	background-image:  url("images/background-application-01.png");
+	height: auto !important;
+}
+.backg-benefit
+{	
+	background-image:  url("images/background-04-01.png");
+	height: auto !important;
+}
+.backg-about
+{	
+	background-image:  url("images/background-about-01.png");
 	height: auto !important;
 }
 .carousel-img-award{
