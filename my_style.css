@@ -365,7 +365,7 @@ h2.features-text::after {
 	font-family: 'helveticaneueltstd-roman', sans-serif;
 	font-weight: 400;
 	font-size: 16px;
-	color: #2E2E2E;
+	/* color: #2E2E2E; */
 	word-spacing: 0.2em;
 	line-height: 160%;
 }
