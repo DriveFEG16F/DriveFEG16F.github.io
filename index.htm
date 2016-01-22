@@ -2,11 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Ravalic - Free HTML5 Template</title>
+<title>DynaFeed</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="my_style.css" type="text/css">
+	<link rel="stylesheet" href="style.css" type="text/css">
 	<link href="css/lightbox.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Poppins:400,600,700,500,300' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,400italic,500,500italic,300,100italic,100,300italic' rel='stylesheet' type='text/css'>
@@ -20,64 +20,85 @@
 
 
 </head>
-<body>
-<header class="header">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4 ">
-				<div class="navbar-header">
-					    <button type="button" class="navbar-toggle menu-button" data-toggle="collapse" data-target="#myNavbar">
-					        <span class="glyphicon glyphicon-align-justify"></span>
-					    </button>
-      					<a class="navbar-brand logo" href="#">DynaFeed</a>
-    			</div>
-			</div>
-			<div class="col-md-8">
-				<nav class="collapse navbar-collapse" id="myNavbar" role="navigation">
-					<ul class="nav navbar-nav navbar-right menu">
-							<li><a href="#home" class="page-scroll active">HOME</a></li>
-							<li><a href="#solution" class="page-scroll">SOLUTION</a></li>
-							<li><a href="#application" class="page-scroll">APPLICATION</a></li>
-							<li><a href="#benefit" class="page-scroll">BENEFIT</a></li>
-							<li><a href="#about" class="page-scroll">ABOUT</a></li>
-							<li><a href="#contact" class="page-scroll">CONTACT</a></li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-	</div>
-</header>
 
-<div class="main" id="home">
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top navbar-overwrite">
+  <div class="container-fluid">
+	  	<div class="row">
+	  		<div class="col-md-12">
+		  		<div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
+				    <div class="navbar-header">
+				      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+				      <a class="navbar-brand" href="#">DynaFeed</a>
+				    </div>
+
+				    <!-- Collect the nav links, forms, and other content for toggling -->
+				    <div class="collapse navbar-collapse" id="myNavbar" role="navigation">
+				      <ul class="nav navbar-nav">
+				        <li><a href="#home" class="page-scroll active">HOME</a></li>
+						<li><a href="#solution" class="page-scroll">SOLUTION</a></li>
+						<li><a href="#application" class="page-scroll">APPLICATION</a></li>
+						<li><a href="#benefit" class="page-scroll">BENEFIT</a></li>
+						<li><a href="#about" class="page-scroll">ABOUT</a></li>
+						<li><a href="#contact" class="page-scroll">CONTACT</a></li>
+				      </ul>
+				    </div><!-- /.navbar-collapse -->
+				</div>
+			</div>
+		</div><!-- /.row -->
+	</div><!-- /.container-fluid -->
+</nav>
+
+<div class="container-fluid main" id="home">
 	<div class="row">
-		<div class="col-md-12">
-			<div class="carousel slide" id="myCarousel" data-ride="carousel" data-interval="1000">
-				<ol class="carousel-indicators">
+		<div class="col-md-12 backg backg-main">
+			<div class="carousel slide backg-main-slide" id="myCarousel" data-ride="carousel" data-interval="3000">
+				<ol class="carousel-indicators indicators-position">
 					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 					<li data-target="#myCarousel" data-slide-to="1"></li>
 					<li data-target="#myCarousel" data-slide-to="2"></li>
 				</ol>
 				<div class="carousel-inner" role="listbox">
-					<div class="item active">
-						<div class="carousel-img-award"></div>							
-						<div class="carousel-caption">
-							<h2></h2>
-							<p></p>
+					<div class="item active slide-box-parent">
+						<div class="col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 col-xs-12 slide-slogan slide-text">
+							<h2>SIMPLIFY<br>COMPLEXITIES<br>AMPLIFY<br>POSSIBILITIES</h2>						
 						</div>
 					</div>
-					<div class="item">
-						<div class="carousel-img-solution"></div>
-						<div class="carousel-caption">
-							<h2></h2>
-							<p></p>
+					<div class="item slide-box-parent">
+						<div class="col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 col-xs-12 slide-app slide-text">
+							<div class="col-md-4 col-sm-4 col-xs-4">
+								<img src="images/app_wellness.png" class="img-responsive" alt="">
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-4">
+								<img src="images/app_weight.png" class="img-responsive" alt="">
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-4">
+								<img src="images/app_review.png" class="img-responsive" alt="">
+							</div>
+							<div class="col-md-12 col-sm-12 col-xs-12">
+								<h3>Smart Garment Solution for<br>Weight Training and Cardio Workout</h3>
+						</div>
 						</div>
 					</div>
-					<div class="item">
-						<div class="carousel-img-application"></div>
-						<div class="carousel-caption">
-							<h2></h2>
-							<p></p>
-						</div>
+					<div class="item slide-box-parent">
+						<div class="col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 col-xs-12 slide-solution slide-text">
+							<div class="col-md-4 col-sm-4 col-xs-4">
+								<div class="circle circle-border icon-textile"></div>
+								<h3>Smart<br>Textile</h3>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-4">
+								<div class="circle circle-border icon-biosensor"></div>
+								<h3>Biosensing<br>Technology</h3>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-4">
+								<div class="circle circle-border icon-iot"></div>
+								<h3>IoT<br>Platform</h3>
+							</div>
 					</div>
 				</div>
 			</div>
@@ -96,97 +117,48 @@
 <div class="container-fluid features">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-10 col-md-offset-1 col-sm-10 col-xs-12 icon-text-box">
-				<div class="col-md-6 col-sm-12 col-xs-12 icon-text-box">
-					<p>DynaFeed is a revolutionary smart garment system that seamlessly connects the textile and digital worlds. By combining advanced biosensor technology solutions with FENC innovated ultra-thin conductive carbon nanotubes polymer film, DynaFeed empowers athletes by providing a more precise interface between the body’s physiology and digital devices/applications. This allow fore more accurate real-time data that can be used to optimize training and performance.</p>
+			<div class="col-md-12">
+				<div class="col-md-10 col-md-offset-1 col-sm-10 col-xs-12">
+					<div class="col-md-6 col-sm-12 col-xs-12 text-box">
+						<p>DynaFeed is a revolutionary smart garment system that seamlessly connects the textile and digital worlds. By combining advanced biosensor technology solutions with FENC innovated ultra-thin conductive carbon nanotubes polymer film, DynaFeed empowers athletes by providing a more precise interface between the body’s physiology and digital devices/applications. This allow fore more accurate real-time data that can be used to optimize training and performance.</p>
+					</div>
+	                <div class="col-md-6 col-sm-12 col-xs-12 text-box">
+	                	<div class="video-container">
+	                		<iframe width="560" height="315" src="https://www.youtube.com/embed/yRyMoyRPrr8?list=FLDlfGjHsZyiEikrZyDrtRxQ" frameborder="0" allowfullscreen></iframe>
+	                	</div>
+	                </div>
 				</div>
-                <div class="col-md-6 col-sm-12 col-xs-12 class="video-container"">
-                	<iframe width="560" height="315" src="https://www.youtube.com/embed/yRyMoyRPrr8?list=FLDlfGjHsZyiEikrZyDrtRxQ" frameborder="0" allowfullscreen></iframe>
-                </div>
 			</div>
 		</div>
 	</div>
 </div>
 
-<!--<div class="container-fluid main" id="page-top">
-	<div class="row">
-		<div class="col-md-12 backg">
-			<div class="col-md-4 col-md-offset-4 col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
-				<div class="text-box">
-                	<p class="intro">Internet of Textile</p>
-                    <h2>Ravalic</h2>
-                    <h3>A Free Responsive HTML5 Template</h3>
-                    <p>By <span><a href="http://www.html5layouts.com">HTML5 Layouts</a></span></p>
-                    <p><a href="#" class="link-button">Tell Me Something</a></p>
-				</div>
-  			</div>
-		</div>
-		<div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 some-notes">
-			<div class="title">
-                <h2>Welcome To DynaFeed</h2>
-            </div>
-            <div class="col-md-6 col-sm-12 col-xs-12 icon-text-box">
-                <p>DynaFeed is a revolutionary smart garment system that seamlessly connects the textile and digital worlds. By combining advanced biosensor technology solutions with FENC innovated ultra-thin conductive carbon nanotubes polymer film, DynaFeed empowers athletes by providing a more precise interface between the body’s physiology and digital devices/applications. This allow fore more accurate real-time data that can be used to optimize training and performance.</p>
-            </div>
-            <div class="col-md-6 col-sm-12 col-xs-12 class="video-container"">
-            	<iframe width="560" height="315" src="https://www.youtube.com/embed/yRyMoyRPrr8?list=FLDlfGjHsZyiEikrZyDrtRxQ" frameborder="0" allowfullscreen></iframe>
-            </div>
-		</div>
-	</div>
-</div>-->
-
-<div class="container-fluid main">
+<div class="container-fluid main" id="solution">
 	<div class="row">
 		<div class="col-md-12 backg backg-feature backg-solution">
 			<div class="col-md-10 col-md-offset-1 col-sm-10 col-xs-12 backg-text-box">
-				<div class="text-box">
+<!-- 				<div class="text-box">
                 	<h3>SOLUTION</h3>
-				</div>
+				</div> -->
   			</div>
 		</div>
 	</div>
 </div>
 
-<div class="container-fluid features" id="solution">
+<div class="container-fluid features">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
-				<!--<h2 class="text-center features-text">SOLUTION</h2>-->
-				<div class="col-md-10 col-md-offset-1 col-sm-10 col-xs-12 text-box">
+			<div class="col-md-12 text-box">
+				<div class="col-md-10 col-md-offset-1 col-sm-10 col-xs-12">
+					<h3 class="text-box-center">SOLUTION</h3>
 					<h4>Smart Textile Technology</h4>
 					<p>DynaFeed provides high durability that enhances wash cycles and resistance to chemical oxidizers by more than 500%. The cutting edge textile technology eliminates environmental and physiological concerns associated with current heavy metal technologies, while vastly reducing the smart garment manufacturing processes.</p>
 				</div>
 				<div class="col-md-10 col-md-offset-1 col-sm-10 col-xs-12">
-					<div class="col-md-2 col-sm-4 col-xs-4 circle-text-box">
-						<div class="circle circle-border circle-textile circle-pliability"></div>
-						<p>Ultra Low-Profile, <br> High Pliability</p>						
-					</div>
-					<div class="col-md-2 col-sm-4 col-xs-4 circle-text-box">
-						<div class="circle circle-border circle-textile circle-non-metallic"></div>
-						<p>Non-Metallic Polyester Based Matrix</p>					
-					</div>
-					<div class="col-md-2 col-sm-4 col-xs-4 circle-text-box">
-						<div class="circle circle-border circle-textile circle-water"></div>
-						<p>Water & Oxidation Proof</p>						
-					</div>
-					<div class="col-md-2 col-sm-4 col-xs-4 circle-text-box">
-						<div class="circle circle-border circle-textile circle-durability"></div>
-						<p>High Durability <br> >100x Wash Cycles</p>						
-					</div>
-					<div class="col-md-2 col-sm-4 col-xs-4 circle-text-box">
-						<div class="circle circle-border circle-textile circle-designable"></div>
-						<p>Highly Designable in Shapes & Sizes</p>					
-					</div>
-					<div class="col-md-2 col-sm-4 col-xs-4 circle-text-box">
-						<div class="circle circle-border circle-textile circle-placement"></div>
-						<p>Unrestricted Placement</p>				
-					</div>
-				</div>
-				<div class="col-md-10 col-md-offset-1 col-sm-10 col-xs-12 text-box">
 					<h4>Fitness Tracking System</h4>
 					<p>With its state-of-the-art biosensing system, DynaFeed can measure users biosignal with high accuracy and enhance their performance. Highly conductive polymer film also provides a simple and unique solution to track users’  movement and activity level.</p>
 				</div>
-				<div class="col-md-10 col-md-offset-1 col-sm-10 col-xs-12 text-box">
+				<div class="col-md-10 col-md-offset-1 col-sm-10 col-xs-12">
 					<h4>Wearable IoT Platform</h4>
 					<p>By weaving together connectivity and comfortability, DynaFeed creates an on-body platform upon which diverse devices and applications can work, alone or together, to help people acknowledge and improve their performance.</p>
 				</div>
@@ -195,102 +167,106 @@
 	</div>
 </div>
 
-<div class="container-fluid main">
+<div class="container-fluid main" id="application">
 	<div class="row">
 		<div class="col-md-12 backg backg-feature backg-application">
 			<div class="col-md-10 col-md-offset-1 col-sm-10 col-xs-12 backg-text-box">
-				<div class="text-box">
+<!-- 				<div class="text-box">
                 	<h3>APPLICATION</h3>
-				</div>
+				</div> -->
   			</div>
 		</div>
 	</div>
 </div>
 
-<div class="container-fluid features" id="application">
+<div class="container-fluid features">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
-				<!--<h2 class="text-center features-text">APPLICATION</h2>-->
-				<div class="col-md-10 col-md-offset-1 col-sm-10 col-xs-12 text-box">
+			<div class="col-md-12 text-box">
+				<div class="col-md-10 col-md-offset-1 col-sm-10 col-xs-12">
+					<h3 class="text-box-center">APPLICATION</h3>
 					<p>DynaFeed’s smart garment solution can not only automatically track people’s biosignal and workout effort across diverse exercises: weight lifting, cycling, interval training…, but also provide real-time guidance to enhance efficiency and avoid injuries: weight-lifting tempo, transition time, cycling cadence… </p>
-				</div>
-				<div class="col-md-10 col-md-offset-1 col-sm-10 col-xs-12 icon-text-box">
-					<div class="col-md-3 col-sm-3 col-xs-6">
-						<div class="circle circle-border circle-heartrate"></div>
-					</div>
-					<div class="col-md-3 col-sm-3 col-xs-6">
-						<div class="circle circle-border circle-shoe"></div>
-					</div>
-					<div class="col-md-3 col-sm-3 col-xs-6">
-						<div class="circle circle-border circle-dumbbell"></div>
-					</div>
-					<div class="col-md-3 col-sm-3 col-xs-6">
-						<div class="circle circle-border circle-bike"></div>
-					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
 
-<div class="container-fluid main">
+<div class="container-fluid main" id="benefit">
 	<div class="row">
 		<div class="col-md-12 backg backg-feature backg-benefit">
 			<div class="col-md-10 col-md-offset-1 col-sm-10 col-xs-12 backg-text-box">
-				<div class="text-box">
+<!-- 				<div class="text-box">
                 	<h3>BENEFIT</h3>
-				</div>
+				</div> -->
   			</div>
 		</div>
 	</div>
 </div>
 
-<div class="container-fluid features" id="benefit">
+<div class="container-fluid features">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
-				<!--<h2 class="text-center features-text">BENEFIT</h2>-->
-				<div class="col-md-6 col-sm-12 col-xs-12 text-box">
-					<h4>Consumer</h4>
-					<p>Automatically track the training progress and monitor the physical state.</p>
-					<p>Continuously enhance workout efficiency and improve performance.</p>
-					<p>Prevent training injuries and overload.</p>
-				</div>
-				<div class="col-md-6 col-sm-12 col-xs-12 text-box">
-					<h4>Brand</h4>
-					<p>Improve cost effectiveness and time to market.</p>
-					<p>Create durable,  sustainable and reliable products for diverse applications.</p>
-					<p>Engage customer and create powerful experience across different segments: weight training, cardio workout, wellness management…</p>
+			<div class="col-md-12 text-box">
+				<div class="col-md-10 col-md-offset-1 col-sm-10 col-xs-12">
+					<h3 class="text-box-center">BENEFIT</h3>
+					<div class="col-md-6 col-sm-12 col-xs-12">
+						<h4>Consumer</h4>
+						<ul>
+							<li>Automatically track the training progress and monitor the physical state.</li>
+							<li>Continuously enhance workout efficiency and improve performance.</li>
+							<li>Prevent training injuries and overload.</li>
+						</ul>
+					</div>
+					<div class="col-md-6 col-sm-12 col-xs-12">
+						<h4>Brand</h4>
+						<ul>
+							<li>Improve cost effectiveness and time to market</li>
+							<li>Create durable,  sustainable and reliable products for diverse applications.</li>
+							<li>Engage customer and create powerful experience across different segments: weight training, cardio workout, wellness management…</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
 
-<div class="container-fluid backg backg-about" id="about">
+<div class="container-fluid main" id="about">
+	<div class="row">
+		<div class="col-md-12 backg backg-feature backg-about">
+			<div class="col-md-10 col-md-offset-1 col-sm-10 col-xs-12 backg-text-box">
+<!-- 				<div class="text-box">
+                	<h3>ABOUT</h3>
+				</div> -->
+  			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid features">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<h2 class="text-center features-text">ABOUT</h2>
-				<div class="col-md-10 col-md-offset-1 col-sm-10 col-xs-12 icon-text-box">
-					<h3>About FENC</h3>
-					<p>The Company is now entering its 7th year of transformation under the new name of Far Eastern New Century Corporation. (Formerly known as, Far Eastern Textile, between 1949 and 2009.) FENC has innovative and diversified businesses ranging from its production business, to property development and investments. We are fully vertically integrated from upstream petrochemical business through to polyester business, all the way down to textile business. As a result of this integration, the company assembled a group of elites whom been selected from each and every FENC divisions, called FE-X. This is an integrated 2-way vanguard team comprised of elite professionals strategically positioned throughout FENC vertical value chain. FE-X members bring with them the experience, knowhow and authority of execution necessary to seamlessly deliver completed novel science & technology research through to that very first [BUY READY], provides seamless B2B total solution.</p>
+				<div class="col-md-10 col-md-offset-1 col-sm-10 col-xs-12 text-box">
+					<h3 class="text-box-center">ABOUT</h3>
+					<h4>FENC</h4>
+					<p>Far Eastern Textile, found in 1949, is now entering its 7th year of transformation under the new name of Far Eastern New Century Corporation. FENC has innovative and diversified businesses ranging from its production business, to property development & investments. We are fully vertically integrated from upstream petrochemical business through to polyester business, all the way down to textile business. Bringing our expertises, experiences, knowhow and authority of execution to seamlessly deliver completed novel science & technology research through to that very first [BUY READY], provides B2B total solution. Learn more at <a href="http://www.fenc.com/" target="_blank">www.fenc.com/</a></p></p>
 				</div>
-				<div class="col-md-10 col-md-offset-1 col-sm-10 col-xs-12 icon-text-box">
-					<h3>About R&D Center</h3>
-					<p>R&D states its short-term goals of research in "Highlights in polyester, environmental protection, energy saving and carbon emission reduction”, using company basic research foundation of PET synthetic technology to develop PET synthesized raw materials and PET products, and to expand the application of PET in high value-added industries. We integrate research resources and core specialties of related domestic industries, develop bio-based raw material for PET and aim on the green energy/bio-material industry with most potential in future markets hoping to increase the company’s energy for sustainable management. Far Eastern Group R&D Center is established to not only encourage and focus on innovation, but also further improve FENC core competence and create new values to achieve greater accomplishments and future success.</p>
+				<div class="col-md-10 col-md-offset-1 col-sm-10 col-xs-12 text-box">
+					<h4>R&D Center</h4>
+					<p>Hoping to increase the company’s energy for sustainable management, we integrate research resources and core specialties of related domestic industries, develop bio-based raw material for PET and aim on the green energy/bio-material industry with most potential in future markets. Far Eastern Group R&D Centre is established to not only encourage and focus on innovation, but also further improve FENC core competence and create new values to achieve greater accomplishments and future success.</p>
 				</div>
-				<div class="col-md-10 col-md-offset-1 col-sm-10 col-xs-12 icon-text-box">
-					<h3>About NeuroSky</h3>
-					<p>NeuroSky is at the forefront of body and mind monitoring and analysis. Its technologies are at the core of innovative, wearable health and wellness consumer products. NeuroSky makes it possible for millions of consumers to capture and quantify critical health and wellness data so that they can effectively manage their mind and body health. NeuroSky delivers uniquely adaptable chips and algorithms that offer ECG multi-function cardio monitoring, and quantitive and interpretive algorithms in a powerful integrated, adaptable and extensible solution. NeuroSky was founded in 2006, and is headquartered in San Jose, California with offices in Asia and Europe.</p>
+				<div class="col-md-10 col-md-offset-1 col-sm-10 col-xs-12 text-box">
+					<h4>NeuroSky</h4>
+					<p>NeuroSky is at the forefront of body and mind monitoring and analysis. Its technologies are at the core of innovative, wearable health and wellness consumer products. NeuroSky makes it possible for millions of consumers to capture and quantify critical health and wellness data so that they can effectively manage their mind and body health. NeuroSky delivers uniquely adaptable chips and algorithms that offer ECG multi-function cardio monitoring, and quantitive and interpretive algorithms in a powerful integrated, adaptable and extensible solution. NeuroSky was founded in 2006, and is headquartered in San Jose, California with offices in Asia and Europe. Learn more at <a href="http://www.neurosky.com" target="_blank">www.neurosky.com</a></p>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
 
-<div class="container-fluid feature features-black" id="contact">
+<!-- <div class="container-fluid feature features-black" id="contact">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
@@ -314,7 +290,7 @@
                         </div>  
                         <button type="submit" class="btn btn-default btn-sub">Submit</button>
                     </form>
-				</div>
+				</div> -->
 				<!--<div class="col-md-6 col-sm-12 col-xs-12 address-space">
 					<div id="map-canvas"></div>
 					<div class="address">
@@ -374,45 +350,45 @@
       }
       google.maps.event.addDomListener(window, 'load', initialize);
     </script>
-    <script>
-	$(document).ready(function () {
-		$(document).on("scroll", onScroll);
+ //    <script>
+	// $(document).ready(function () {
+	// 	$(document).on("scroll", onScroll);
  
-		$('a[href^="#"]').on('click', function (e) {
-			e.preventDefault();
-			$(document).off("scroll");
+	// 	$('a[href^="#"]').on('click', function (e) {
+	// 		e.preventDefault();
+	// 		$(document).off("scroll");
  
-			$('a').each(function () {
-				$(this).removeClass('active');
-			})
-			$(this).addClass('active');
+	// 		$('a').each(function () {
+	// 			$(this).removeClass('active');
+	// 		})
+	// 		$(this).addClass('active');
  
-			var target = this.hash;
-			$target = $(target);
-			$('html, body').stop().animate({
-				'scrollTop': $target.offset().top
-			}, 500, 'swing', function () {
-				window.location.hash = target;
-				$(document).on("scroll", onScroll);
-			});
-		});
-	});
+	// 		var target = this.hash;
+	// 		$target = $(target);
+	// 		$('html, body').stop().animate({
+	// 			'scrollTop': $target.offset().top
+	// 		}, 500, 'swing', function () {
+	// 			window.location.hash = target;
+	// 			$(document).on("scroll", onScroll);
+	// 		});
+	// 	});
+	// });
  
-	function onScroll(event){
-		var scrollPosition = $(document).scrollTop();
-		$('nav a').each(function () {
-			var currentLink = $(this);
-			var refElement = $(currentLink.attr("href"));
-			if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
-				$('nav ul li a').removeClass("active");
-				currentLink.addClass("active");
-			}
-			else{
-				currentLink.removeClass("active");
-			}
-		});
-	}
-	</script>
+	// function onScroll(event){
+	// 	var scrollPosition = $(document).scrollTop();
+	// 	$('nav a').each(function () {
+	// 		var currentLink = $(this);
+	// 		var refElement = $(currentLink.attr("href"));
+	// 		if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
+	// 			$('nav ul li a').removeClass("active");
+	// 			currentLink.addClass("active");
+	// 		}
+	// 		else{
+	// 			currentLink.removeClass("active");
+	// 		}
+	// 	});
+	// }
+	// </script>
 	<script type="text/javascript">
     jQuery(function ($) {
       // custom formatting example
@@ -434,5 +410,16 @@
       }
     });
   	</script>
+  	<!-- autohidingnavbar -->
+  	<script src="js/jquery.bootstrap-autohidingnavbar.min.js"></script>
+  	<script>
+    		$(".navbar-fixed-top").autoHidingNavbar({
+    			disableAutohide: false,
+    			showOnUpscroll: 'true',
+    			showOnBottom: 'true',
+    			hideOffset: 'auto',
+    			animationDuration: '300'
+    		});
+    </script>
 </body>
 </html>
