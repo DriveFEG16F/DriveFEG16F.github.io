@@ -18,8 +18,46 @@
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
 
+     <!-- Add vUnit.js to the head to avoid FOUC -->
+    <script type="text/javascript" src="../src/vunit.js"></script>
+    <!-- Instantiate vUnit.js passing a CSSMap with properties you want to play with -->
+    <script type="text/javascript">
+      new vUnit({
+        CSSMap: {
+          '.vh': {
+            property: 'height',
+            reference: 'vh'
+          },
+          '.vw': {
+            property: 'width',
+            reference: 'vw'
+          },
+          '.vwfs': {
+            property: 'font-size',
+            reference: 'vw'
+          },
+          '.vhmt': {
+            property: 'margin-top',
+            reference: 'vh'
+          },
+          '.vhmb': {
+            property: 'margin-bottom',
+            reference: 'vh'
+          },
+          '.vminw': {
+            property: 'width',
+            reference: 'vmin'
+          },
+          '.vmaxw': {
+            property: 'width',
+            reference: 'vmax'
+          }
+        }
+      }).init();
+    </script>
+    
      <!-- Google Analytics -->   
-     <script>
+    <script>
      //  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
      //  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
      //  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -28,7 +66,7 @@
      //  ga('create', 'UA-72806767-1', 'auto');
      //  ga('send', 'pageview');
 
-     </script>     
+    </script>     
   </head>
 
   <body>
@@ -55,7 +93,7 @@
                   <li><a href="#application" class="page-scroll">APPLICATION</a></li>
                   <li><a href="#benefit" class="page-scroll">BENEFIT</a></li>
                   <li><a href="#about" class="page-scroll">ABOUT</a></li>
-                  <li><a href="index-delta.htm" class="page-scroll">CONTACT</a></li>
+                  <li><a href="#contact" class="page-scroll">CONTACT</a></li>
                 </ul>
               </div> <!-- navbar-collapse -->
             </div> <!-- col-md-10 --> 
