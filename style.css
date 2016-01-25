@@ -72,7 +72,7 @@ body
     color: white;
     cursor: default;
     width: 100%;
-    /*height: 100vh;*/ /*match browser size*/
+    height: 100vh; /*match browser size*/
     min-height: 100%;
     float: left;
     background-size: cover;
