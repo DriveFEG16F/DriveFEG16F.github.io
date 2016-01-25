@@ -45,8 +45,7 @@ body
     text-shadow: none !important;
     border-bottom-style: none !important;
     opacity: 0.8;
-    display: block;
-    height: 50px;
+    
 }
 .navbar-style h6
 {
