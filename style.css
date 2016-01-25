@@ -24,11 +24,14 @@
 
 html
 {
-    width: 100%;
+    margin: 0;
+    padding: 0;
     height: 100%;
 }
 body
 {
+    margin: 0;
+    padding: 0;
     min-height: 100%
 }
 
@@ -244,6 +247,10 @@ body
 
 @media (min-width: 380px) and (max-width: 768px)
 {
+    .backg
+    {   
+        background-attachment:scroll;
+    }
     .backg-main
     {
         background-image:  url("images/main.png");
@@ -301,6 +308,10 @@ body
 
 @media (min-width: 0px) and (max-width: 379px)
 {
+    .backg
+    {   
+        background-attachment:scroll;
+    }
     .backg-main
     {
         background-image:  url("images/main.png");
