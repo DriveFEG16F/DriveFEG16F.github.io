@@ -45,6 +45,9 @@ body
     text-shadow: none !important;
     border-bottom-style: none !important;
     opacity: 0.8;
+    max-height: 20px;
+}
+.navbar-logo {
 }
 .navbar-style h6
 {
@@ -235,6 +238,12 @@ body
     font-family: "helveticaneueltstd-lt", Helvetica, Arial, sans-serif;
     font-size: 16px;
     color: #2e2e2e;
+}
+.form-style:focus {
+    color: #dddddd;
+}
+.form-style:enabled {
+    color: #dddddd;
 }
 .btn-style 
 {
