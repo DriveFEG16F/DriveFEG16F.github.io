@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>DynaFeed</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
     	<link href="css/bootstrap.min.css" rel="stylesheet">
     	<link rel="stylesheet" href="style.css" type="text/css">
@@ -18,46 +18,8 @@
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-     <!-- Add vUnit.js to the head to avoid FOUC -->
-    <script type="text/javascript" src="js/vunit.js"></script>
-    <!-- Instantiate vUnit.js passing a CSSMap with properties you want to play with -->
-    <script type="text/javascript">
-      new vUnit({
-        CSSMap: {
-          '.vh': {
-            property: 'height',
-            reference: 'vh'
-          },
-          '.vw': {
-            property: 'width',
-            reference: 'vw'
-          },
-          '.vwfs': {
-            property: 'font-size',
-            reference: 'vw'
-          },
-          '.vhmt': {
-            property: 'margin-top',
-            reference: 'vh'
-          },
-          '.vhmb': {
-            property: 'margin-bottom',
-            reference: 'vh'
-          },
-          '.vminw': {
-            property: 'width',
-            reference: 'vmin'
-          },
-          '.vmaxw': {
-            property: 'width',
-            reference: 'vmax'
-          }
-        }
-      }).init();
-    </script>
-    
      <!-- Google Analytics -->   
-    <script>
+     <script>
      //  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
      //  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
      //  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -66,7 +28,7 @@
      //  ga('create', 'UA-72806767-1', 'auto');
      //  ga('send', 'pageview');
 
-    </script>     
+     </script>     
   </head>
 
   <body>
@@ -82,6 +44,7 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
+                <ul>
                 <h6 class="navbar-brand">DynaFeed</h6>              
               </div> <!-- navbar-header --> 
 
@@ -92,7 +55,7 @@
                   <li><a href="#application" class="page-scroll">APPLICATION</a></li>
                   <li><a href="#benefit" class="page-scroll">BENEFIT</a></li>
                   <li><a href="#about" class="page-scroll">ABOUT</a></li>
-                  <li><a href="#contact" class="page-scroll">CONTACT</a></li>
+                  <li><a href="index-delta.htm" class="page-scroll">CONTACT</a></li>
                 </ul>
               </div> <!-- navbar-collapse -->
             </div> <!-- col-md-10 --> 
@@ -104,7 +67,7 @@
     <!-- MAIN -->
     <div class="container-fluid main" id="home">
       <div class="row">
-        <div class="col-md-12 backg vh100 backg-main">
+        <div class="col-md-12 backg backg-main">
           <div class="col-md-4 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-12 text-box">
             <h2 class="text-box-main">SIMPLIFY<br>COMPLEXITIES<br>AMPLIFY<br>POSSIBILITIES</h2>
           </div>
@@ -116,15 +79,15 @@
       <div class="row">
         <div class="col-md-12 backg backg-main backg-content">
           <div class="col-md-4 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-12 text-box text-box-content">
-            <div class="text-box-intro">
+            <div class="text-box-section">
               <h4>Smart Garment System</h4>
               <p>
                 DynaFeed is a revolutionary smart garment system that seamlessly connects the textile and digital worlds. By combining advanced biosensor technology solutions with FENC innovated ultra-thin conductive carbon nanotubes polymer film, DynaFeed empowers athletes by providing a more precise interface between the body’s physiology and digital devices/applications. This allow fore more accurate real-time data that can be used to optimize training and performance.
               </p>
             </div>
-            <div class="video-container">
+            <!-- <div class="video-container">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/GhZzqd24nnI" frameborder="0" allowfullscreen></iframe>
-            </div>
+            </div> -->
           </div> <!-- col-md-4 -->      
         </div> <!-- col-md-12 -->   
       </div> <!-- row -->

@@ -124,7 +124,7 @@ body
 }
 .text-box-title
 {
-    padding-top: 50vh;
+    padding-top: 48vh;
 }
 .text-box-center
 {
@@ -297,6 +297,10 @@ body
     {
         background-image:  none !important;
     }
+    .text-box-title
+    {
+        padding-top: 24vh;
+    }
     .text-box li
     {
         color:#2e2e2e;
@@ -357,6 +361,10 @@ body
     .backg-content
     {
         background-image:  none !important;
+    }
+    .text-box-title
+    {
+        padding-top: 24vh;
     }
     .text-box li
     {
