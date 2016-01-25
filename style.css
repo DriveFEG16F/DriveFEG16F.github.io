@@ -22,6 +22,15 @@
     src: url("fonts/helveticaneueltstd-roman.woff") format('woff');
 }
 
+html
+{
+    height: 100%;
+}
+body
+{
+    min-height: 100%
+}
+
 /* NAVBAR */
 .navbar-style 
 {
@@ -64,6 +73,7 @@
     cursor: default;
     width: 100%;
     height: 100vh; /*match browser size*/
+    min-height: 100%;
     float: left;
 
 }
@@ -74,7 +84,7 @@
 .backg-content
 {
     height: auto;
-    min-height: 100vh;
+    min-height: 100%;
 }
 .backg-solution
 {
