@@ -58,7 +58,6 @@ body
     text-shadow: none !important;
     border-bottom-style: none !important;
     opacity: 0.8;
-    max-height: 20px;
 }
 .navbar-logo {
 }
@@ -189,6 +188,7 @@ body
     word-spacing: 0.2em;
     line-height: 160%;
     list-style-position: outside;
+    text-decoration: underline;
 }
 .text-box h1
 {
