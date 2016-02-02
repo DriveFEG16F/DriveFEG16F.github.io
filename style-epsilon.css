@@ -142,7 +142,7 @@ body
 }
 .backg-main
 {
-    background-image:  url("images/main-r.png");
+    background-image:  url("images/main-r.jpg");
 }
 .backg-slide
 {
@@ -155,24 +155,126 @@ body
 }
 .backg-solution
 {
-    background-image:  url("images/solution-r.png");
+    background-image:  url("images/solution-r.jpg");
 }
 .backg-application
 {   
-    background-image:  url("images/application-r.png");
+    background-image:  url("images/application-r.jpg");
 }
 .backg-benefit
 {   
-    background-image:  url("images/benefit-r.png");
+    background-image:  url("images/benefit-r.jpg");
 }
 .backg-about
 {   
-    background-image:  url("images/about-r.png");
+    background-image:  url("images/about-r.jpg");
 }
 .backg-contact
 {   
-    /*background-image:  url("images/about-r.png");*/
-    background-color: #000000 !important;
+    background-image:  url("images/contact-r.jpg");
+    /*background-color: #000000 !important;*/
+}
+.backg-10
+{   
+    background-attachment:fixed; /* whether a background image is fixed or scrolls with the rest of the page */
+    background-color: #ffffff;
+    background-position: top center;
+    background-repeat: no-repeat;
+    color: white;
+    cursor: default;
+    padding-left: 6%;
+    padding-right: 6%;
+    width: 100%;
+    height: 10vh; /*match browser size*/
+    min-height: 100%;
+    float: left;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+.backg-100
+{   
+    background-attachment:fixed; /* whether a background image is fixed or scrolls with the rest of the page */
+    background-color: #ffffff;
+    background-position: top center;
+    background-repeat: no-repeat;
+    color: white;
+    cursor: default;
+    padding-left: 6%;
+    padding-right: 6%;
+    width: 100%;
+    height: 100vh; /*match browser size*/
+    min-height: 100%;
+    float: left;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+.backg-transform07
+{
+    background-image:  url("images/transform 01-network-07.jpg");
+}
+.backg-transform06
+{
+    background-image:  url("images/transform 01-network-06.jpg");
+}
+.backg-transform05
+{
+    background-image:  url("images/transform 01-network-05.jpg");
+}
+.backg-transform04
+{
+    background-image:  url("images/transform 01-network-04.jpg");
+}
+.backg-transform03
+{
+    background-image:  url("images/transform 01-network-03.jpg");
+}
+.backg-transform02
+{
+    background-image:  url("images/transform 01-network-02.jpg");
+}
+.backg-transform01
+{
+    background-image:  url("images/transform 01-network-01.jpg");
+}
+.backg-logo00
+{
+    background-image:  url("images/transform 01-logo-00.jpg");
+}
+.backg-logo01
+{
+    background-image:  url("images/transform 01-logo-01.jpg");
+}
+.backg-logo02
+{
+    background-image:  url("images/transform 01-logo-02.jpg");
+}
+.backg-logo03
+{
+    background-image:  url("images/transform 01-logo-03.jpg");
+}
+.backg-logo04
+{
+    background-image:  url("images/transform 01-logo-04.jpg");
+}
+.backg-logo05
+{
+    background-image:  url("images/transform 01-logo-05.jpg");
+}
+.backg-logo06
+{
+    background-image:  url("images/transform 01-logo-06.jpg");
+}
+.backg-logo07
+{
+    background-image:  url("images/transform 01-logo-07.jpg");
+}
+.backg-logo08
+{
+    background-image:  url("images/transform 01-logo-08.jpg");
 }
 
 /* TEXT BOX */
@@ -304,7 +406,7 @@ body
 {
     /*padding: 12px 12px;*/
     background-color: rgba(255, 255, 255, 0.1);
-    border: 1px solid #2e2e2e;
+    border: 1px solid #ffffff;
     border-radius: 4px;
     height: auto !important;
     margin-bottom: 0;
@@ -320,13 +422,14 @@ body
 }
 .btn-style 
 {
-    background-color: #222222;
-    border: 1px solid #2e2e2e;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #ffffff;
     border-radius: 4px;
     height: auto !important;
     margin-top: 16px;
     font-family: "helveticaneueltstd-lt", Helvetica, Arial, sans-serif;
     font-size: 16px;
+    font-weight: bold;
     color: #bbbbbb;
 }
 
@@ -448,34 +551,70 @@ body
     }
     .backg-main
     {
-        background-image:  url("images/main-r.png");
+        background-image:  url("images/main-r.jpg");
     }
     .backg-slide
     {
     }
     .backg-solution
     {
-        background-image:  url("images/solution-r.png");
+        background-image:  url("images/solution-r.jpg");
     }
     .backg-application
     {   
-        background-image:  url("images/application-r.png");
+        background-image:  url("images/application-r.jpg");
     }
     .backg-benefit
     {   
-        background-image:  url("images/benefit-r.png");
+        background-image:  url("images/benefit-r.jpg");
     }
     .backg-about
     {   
-        background-image:  url("images/about-r.png");
+        background-image:  url("images/about-r.jpg");
+    }
+    .backg-contact
+    {   
+        background-image:  url("images/contact-r.jpg");
     }
     .backg-content
     {
         background-image:  none !important;
     }
+    .backg-10
+    {   
+        background-color: #000000;
+        height: 1px; /*match browser size*/
+        min-height: 1px;
+        background-image:  none !important;
+    }
+    .backg-100
+    {   
+        background-color: #000000;
+        height: 1px; /*match browser size*/
+        min-height: 1px;
+        background-image:  none !important;
+    }
     .text-box-title
     {
         text-align: left;
+    }
+    .form-style
+    {
+        /*padding: 12px 12px;*/
+        border: 2px solid #999999;
+        color: #2e2e2e;
+    }
+    .form-style:focus {
+        color: #111111;
+    }
+    .form-style:enabled {
+        color: #111111;
+    }
+    .btn-style 
+    {
+        border: 2px solid #999999;
+        font-weight: normal;
+        color: #999999;
     }
 }
 /* Portrait */
@@ -510,34 +649,75 @@ body
     }
     .backg-main
     {
-        background-image:  url("images/main.png");
+        background-image:  url("images/main.jpg");
     }
     .backg-slide
     {
     }
     .backg-solution
     {
-        background-image:  url("images/solution.png");
+        background-image:  url("images/solution.jpg");
     }
     .backg-application
     {   
-        background-image:  url("images/application.png");
+        background-image:  url("images/application.jpg");
     }
     .backg-benefit
     {   
-        background-image:  url("images/benefit.png");
+        background-image:  url("images/benefit.jpg");
     }
     .backg-about
     {   
-        background-image:  url("images/about.png");
+        background-image:  url("images/about.jpg");
+    }
+    .backg-contact
+    {   
+        background-image:  url("images/contact.jpg");
     }
     .backg-content
     {
         background-image:  none !important;
     }
+    .backg-10
+    {   
+        background-color: #000000;
+        height: 1px; /*match browser size*/
+        min-height: 1px;
+        background-image:  none !important;
+    }
+    .backg-100
+    {   
+        background-color: #000000;
+        height: 1px; /*match browser size*/
+        min-height: 1px;
+        background-image:  none !important;
+    }
     .text-box-title
     {
         text-align: center;
+    }
+    .form-style
+    {
+        /*padding: 12px 12px;*/
+        border: 2px solid #999999;
+        color: #2e2e2e;
+    }
+    .form-style:focus {
+        color: #111111;
+    }
+    .form-style:enabled {
+        color: #111111;
+    }
+    .btn-style 
+    {
+        border: 2px solid #999999;
+        border-radius: 4px;
+        height: auto !important;
+        margin-top: 16px;
+        font-family: "helveticaneueltstd-lt", Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+        color: #999999;
     }
     
 }
