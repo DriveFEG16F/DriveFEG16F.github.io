@@ -40,23 +40,50 @@ body
     padding: 0;
     min-height: 100%
 }
-
-.logo
-{
-    width: 80%;
-    margin: 0;
-    padding-top: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 24px;
-}
-
 .award
 {
+    background-image:  url("images/ispo.png");
+    background-color: transparent;
+    background-position: top left;
+    background-repeat: no-repeat;
     display: block;
-    margin-left: 0;
-    margin-right: auto;
-    padding-top: 24px;
+    width: 100%;
+    height: 100%;
+    background-size: auto;
+    margin: 0 0 0 0;
+    padding: 50% 50% 50% 50%;
+}
+
+/* SLIDE */
+.slide-container
+{
+    display: block;
+}
+.slide-box
+{
+    background-color: transparent;
+    background-position: top center;
+    background-repeat: no-repeat;
+    cursor: default;
+    display: block;
+    width: 80%;
+    height: 100%;
+    padding-top: 50%;
+    padding-bottom: 50%;
+    background-size: 100%;
+    margin-top: 36vh;
+}
+.slide-smart-garment
+{
+    background-image:  url("images/smart-garment-r.png");
+}
+.slide-iot
+{
+    background-image:  url("images/internet-of-textile-r.png");
+}
+.slide-simplify
+{
+    background-image:  url("images/simplify-r.png");
 }
 
 /* NAVBAR */
@@ -107,7 +134,7 @@ body
     height: 100vh; /*match browser size*/
     min-height: 100%;
     float: left;
-    background-size: 100%;
+    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -115,11 +142,11 @@ body
 }
 .backg-main
 {
-    background-image:  url("images/main-r.png");
+    background-image:  url("images/main-r.jpg");
 }
 .backg-slide
 {
-    padding-top: 28vh;
+    padding-top: 36vh;
 }
 .backg-content
 {
@@ -128,24 +155,142 @@ body
 }
 .backg-solution
 {
-    background-image:  url("images/solution-r.png");
+    background-image:  url("images/solution-r.jpg");
 }
 .backg-application
 {   
-    background-image:  url("images/application-r.png");
+    background-image:  url("images/application-r.jpg");
 }
 .backg-benefit
 {   
-    background-image:  url("images/benefit-r.png");
+    background-image:  url("images/benefit-r.jpg");
 }
 .backg-about
 {   
-    background-image:  url("images/about-r.png");
+    background-image:  url("images/about-r.jpg");
 }
 .backg-contact
 {   
-    /*background-image:  url("images/about-r.png");*/
-    background-color: #000000 !important;
+    background-image:  url("images/contact-r.jpg");
+    /*background-color: #000000 !important;*/
+}
+.backg-10
+{   
+    background-attachment:fixed; /* whether a background image is fixed or scrolls with the rest of the page */
+    background-color: #ffffff;
+    background-position: top center;
+    background-repeat: no-repeat;
+    color: white;
+    cursor: default;
+    padding-left: 6%;
+    padding-right: 6%;
+    width: 100%;
+    height: 10vh; /*match browser size*/
+    min-height: 100%;
+    float: left;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+.backg-100
+{   
+    background-attachment:fixed; /* whether a background image is fixed or scrolls with the rest of the page */
+    background-color: #ffffff;
+    background-position: top center;
+    background-repeat: no-repeat;
+    color: white;
+    cursor: default;
+    padding-left: 6%;
+    padding-right: 6%;
+    width: 100%;
+    height: 100vh; /*match browser size*/
+    min-height: 100%;
+    float: left;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+.backg-transform01
+{
+    background-image:  url("images/transform 01-network-01.jpg");
+}
+.backg-transform02
+{
+    background-image:  url("images/transform 01-network-02.jpg");
+}
+.backg-transform03
+{
+    background-image:  url("images/transform 01-network-03.jpg");
+}
+.backg-transform04
+{
+    background-image:  url("images/transform 01-network-04.jpg");
+}
+.backg-transform05
+{
+    background-image:  url("images/transform 01-network-05.jpg");
+}
+.backg-transform06
+{
+    background-image:  url("images/transform 01-network-06.jpg");
+}
+.backg-transform07
+{
+    background-image:  url("images/transform 01-network-07.jpg");
+}
+.backg-logo00
+{
+    background-image:  url("images/transform 01-logo-00.jpg");
+}
+.backg-logo01
+{
+    background-image:  url("images/transform 01-logo-01.jpg");
+}
+.backg-logo02
+{
+    background-image:  url("images/transform 01-logo-02.jpg");
+}
+.backg-logo03
+{
+    background-image:  url("images/transform 01-logo-03.jpg");
+}
+.backg-logo04
+{
+    background-image:  url("images/transform 01-logo-04.jpg");
+}
+.backg-logo05
+{
+    background-image:  url("images/transform 01-logo-05.jpg");
+}
+.backg-logo06
+{
+    background-image:  url("images/transform 01-logo-06.jpg");
+}
+.backg-logo07
+{
+    background-image:  url("images/transform 01-logo-07.jpg");
+}
+.backg-logo08
+{
+    background-image:  url("images/transform 01-logo-08.jpg");
+}
+.backg-logo09
+{
+    background-image:  url("images/transform 01-logo-09.jpg");
+}
+.backg-logo10
+{
+    background-image:  url("images/transform 01-logo-10.jpg");
+}
+.backg-logo11
+{
+    background-image:  url("images/transform 01-logo-11.jpg");
+}
+.backg-logo12
+{
+    background-image:  url("images/transform 01-logo-12.jpg");
 }
 
 /* TEXT BOX */
@@ -156,25 +301,9 @@ body
 {
     padding-top: 36vh;
 }
-.text-box-slide
-{
-    height: 100vh;
-}
-.text-box-main-title
-{
-    padding-bottom: 36px;
-}
-.text-box-main-icon
-{
-
-}
 .text-box-title
 {
     padding-top: 48vh;
-}
-.text-box-center
-{
-    text-align: center;
 }
 .text-box-content
 {
@@ -195,18 +324,18 @@ body
 }
 .text-box-intro
 {
-    padding-bottom: 120px;
+    padding-bottom: 40px;
 }
 .text-box ul
 {
-    padding: 1em;
+    padding-left: 1em;
     margin: 0;
 }
 .text-box li
 {
     font-family: "helveticaneueltstd-roman", Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: 200;
+    font-size: 18px;
     color: #ffffff;
     word-spacing: 0.2em;
     line-height: 160%;
@@ -245,20 +374,17 @@ body
     font-weight: bold;
 
 }
-.text-box h5
-{
-    font-family: "helveticaneueltstd-lt", Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    word-spacing: 0.2em;
-}
 .text-box p
 {
     font-family: "helveticaneueltstd-lt", Helvetica, Arial, sans-serif;
-    font-weight: 400;
+    font-weight: 200;
     font-size: 18px;
     word-spacing: 0.2em;
     line-height: 160%;
+}
+.text-box a
+{
+    text-decoration: underline;
 }
 .text-box p span
 {
@@ -274,7 +400,7 @@ body
 }
 .text-box p a.link-button
 {
-    text-decoration: none;
+    text-decoration: underline;
     color: #fff;
     border: #fff solid 1px;
     padding: 15px 22px;
@@ -296,7 +422,7 @@ body
 {
     /*padding: 12px 12px;*/
     background-color: rgba(255, 255, 255, 0.1);
-    border: 1px solid #2e2e2e;
+    border: 1px solid #ffffff;
     border-radius: 4px;
     height: auto !important;
     margin-bottom: 0;
@@ -312,28 +438,32 @@ body
 }
 .btn-style 
 {
-    background-color: #222222;
-    border: 1px solid #2e2e2e;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #ffffff;
     border-radius: 4px;
     height: auto !important;
     margin-top: 16px;
     font-family: "helveticaneueltstd-lt", Helvetica, Arial, sans-serif;
     font-size: 16px;
+    font-weight: bold;
     color: #bbbbbb;
 }
 
 /* VIDEO */
-.video-container {
+.video-container 
+{
     position: relative;
     padding-bottom: 56.25%;
-    padding-top: 30px; 
+/*    padding-top: 20%; */
     height: 0; 
     overflow: hidden;
+    margin-bottom: 120px;
 }
  
 .video-container iframe,
 .video-container object,
-.video-container embed {
+.video-container embed 
+{
     position: absolute;
     top: 0;
     left: 0;
@@ -409,18 +539,29 @@ body
   z-index: 2;
 }
 
-@media (min-width: 769px) and (max-width: 1024px)
+/* landscape */
+@media only screen 
+  and (max-device-width: 1024px)
+  and (orientation: landscape) 
 {
-    .logo
-    {
-        width: 80%;
-    }
     .award
     {
-        display: block;
-        margin-left: 0px;
-        margin-right: auto;
-        padding-top: 12px;
+        background-image:  url("images/ispo-b.png");
+    }
+    .slide-box
+    {
+    }
+    .slide-smart-garment
+    {
+        background-image:  url("images/smart-garment-r.png");
+    }
+    .slide-iot
+    {
+        background-image:  url("images/internet-of-textile-r.png");
+    }
+    .slide-simplify
+    {
+        background-image:  url("images/simplify-r.png");
     }
     .backg
     {   
@@ -428,112 +569,108 @@ body
     }
     .backg-main
     {
-        background-image:  url("images/main-r.png");
+        background-image:  url("images/main-r.jpg");
     }
-    .backg-slide{
-
+    .backg-slide
+    {
     }
     .backg-solution
     {
-        background-image:  url("images/solution-r.png");
+        background-image:  url("images/solution-r.jpg");
     }
     .backg-application
     {   
-        background-image:  url("images/application-r.png");
+        background-image:  url("images/application-r.jpg");
     }
     .backg-benefit
     {   
-        background-image:  url("images/benefit-r.png");
+        background-image:  url("images/benefit-r.jpg");
     }
     .backg-about
     {   
-        background-image:  url("images/about-r.png");
+        background-image:  url("images/about-r.jpg");
+    }
+    .backg-contact
+    {   
+        background-image:  url("images/contact-r.jpg");
     }
     .backg-content
     {
         background-image:  none !important;
     }
-    .text-box-title /* max-width: 1024px */
-    {
-        padding-top: 24vh;
-
+    .backg-10
+    {   
+        display: block;
+        background-color: #000000;
+        height: 0;
+        min-height: 0;
+        background-image:  none !important;
+        padding: 0;
+        margin: 0;
     }
-    .text-box-main-title
-    {
-        padding-bottom: 28px;
+    .backg-100
+    {   
+        display: block;
+        background-color: #000000;
+        height: 0;
+        min-height: 0;
+        background-image:  none !important;
+        padding: 0;
+        margin: 0;
     }
-    .text-box li
-    {
-        color:#2e2e2e;
-    }
-    .text-box p
-    {
-        color:#2e2e2e;
-    }
-    .text-box h1
-    {
-        font-size: 48px;
-        /*color:#2e2e2e;*/
-    }
-    .text-box h2 
-    {
-        /*text-align: center;*/
-        font-size: 36px;
-        /*color:#2e2e2e;*/
-    }
-    .text-box h3 
+    .text-box-title
     {
         text-align: left;
-        font-size: 36px;
-        /*color:#2e2e2e;*/
     }
-    .text-box h4 
+    .form-style
     {
-        color:#2e2e2e;
+        /*padding: 12px 12px;*/
+        border: 2px solid #999999;
+        color: #2e2e2e;
     }
-    .text-box h5 
-    {
-        font-size: 16px;
+    .form-style:focus {
+        color: #111111;
     }
-    .text-box p a.link-button 
-    {
-        padding: 8px 14px;
-        font-size: 14px;
+    .form-style:enabled {
+        color: #111111;
     }
-    .text-box-main-icon
+    .btn-style 
     {
-        width: 88%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        border: 2px solid #999999;
+        font-weight: normal;
+        color: #999999;
     }
-    .circle-border 
+    .text-box-app
     {
-        border: 3px;
-        border-style: solid;
-        border-color: #aaaaaa;
+        padding-left: 8%;
+        padding-right: 8%;
     }
 }
-
-@media (min-width: 481px) and (max-width: 768px)
+/* Portrait */
+@media only screen 
+  and (max-device-width: 1024px)
+  and (orientation: portrait) 
 {
-    .logo
+    .award
     {
-        width: 60%;
-        padding-top: 0;
-        padding-left: 0;
-        padding-right: 0;
-        padding-bottom: 4px;
-        display: block;
+        background-image:  url("images/ispo-b.png");
+    }
+    .slide-box
+    {
         margin-left: auto;
         margin-right: auto;
     }
-    .award
+    .slide-smart-garment
     {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 36px;
+        background-image:  url("images/smart-garment.png");
+    }
+    .slide-iot
+    {
+        background-image:  url("images/internet-of-textile.png");
+    }
+    .slide-simplify
+    {
+        background-image:  url("images/simplify.png");
     }
     .backg
     {   
@@ -541,39 +678,108 @@ body
     }
     .backg-main
     {
-        background-image:  url("images/main.png");
+        background-image:  url("images/main.jpg");
     }
     .backg-slide
     {
-        padding-top: 32vh;
     }
     .backg-solution
     {
-        background-image:  url("images/solution.png");
+        background-image:  url("images/solution.jpg");
     }
     .backg-application
     {   
-        background-image:  url("images/application.png");
+        background-image:  url("images/application.jpg");
     }
     .backg-benefit
     {   
-        background-image:  url("images/benefit.png");
+        background-image:  url("images/benefit.jpg");
     }
     .backg-about
     {   
-        background-image:  url("images/about.png");
+        background-image:  url("images/about.jpg");
+    }
+    .backg-contact
+    {   
+        background-image:  url("images/contact.jpg");
     }
     .backg-content
     {
         background-image:  none !important;
     }
-    .text-box-title /* max-width: 768px */
-    {
-        padding-top: 24vh;
+    .backg-10
+    {   
+        display: block;
+        background-color: #000000;
+        height: 0;
+        min-height: 0;
+        background-image:  none !important;
+        padding: 0;
+        margin: 0;
     }
-    .text-box-main-title
+    .backg-100
+    {   
+        display: block;
+        background-color: #000000;
+        height: 0;
+        min-height: 0;
+        background-image:  none !important;
+        padding: 0;
+        margin: 0;
+    }
+    .text-box-title
     {
-        padding-bottom: 24px;
+        text-align: center;
+    }
+    .form-style
+    {
+        /*padding: 12px 12px;*/
+        border: 2px solid #999999;
+        color: #2e2e2e;
+    }
+    .form-style:focus {
+        color: #111111;
+    }
+    .form-style:enabled {
+        color: #111111;
+    }
+    .btn-style 
+    {
+        border: 2px solid #999999;
+        border-radius: 4px;
+        height: auto !important;
+        margin-top: 16px;
+        font-family: "helveticaneueltstd-lt", Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+        color: #999999;
+    }
+    
+}
+
+/* Size Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px)
+  and (orientation: landscape) 
+{
+
+    .text-box-title
+    {
+        padding-top: 32vh;
+    }
+    .text-box-content
+    {
+        padding-top: 60px;
+        padding-bottom: 120px;
+    }
+    .text-box-section
+    {
+        padding-bottom: 20px;
+    }
+    .text-box-app
+    {
+        padding-top: 10px;
     }
     .text-box li
     {
@@ -585,109 +791,54 @@ body
     }
     .text-box h1
     {
-        text-align: center;
-        font-size: 48px;
-        /*color:#2e2e2e;*/
     }
     .text-box h2 
     {
-        text-align: center;
-        font-size: 36px;
-        /*color:#2e2e2e;*/
     }
     .text-box h3 
     {
-        text-align: center;
         font-size: 36px;
-        /*color:#2e2e2e;*/
     }
     .text-box h4 
     {
         color:#2e2e2e;
     }
-    .text-box h5
-    {
-        font-size: 16px;
-    }
     .text-box p a.link-button 
     {
         padding: 8px 14px;
-        font-size: 14px;
     }
-    .text-box-main-icon
+        .video-container 
     {
-        width: 64%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .circle-border 
-    {
-        border: 3px;
-        border-style: solid;
-        border-color: #aaaaaa;
+        margin-top: 40px;
+        margin-bottom: 60px;
     }
 }
-
-@media (min-width: 321px) and (max-width: 480px)
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 960px)
+  and (orientation: landscape) 
 {
-    .logo
+    .slide-box
     {
-        width: 72%;
-        padding-top: 0;
-        padding-left: 0;
-        padding-right: 0;
-        padding-bottom: 4px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        width: 40%;
     }
-   .award
-    {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 48px;
-    }
-    .backg
-    {   
-        background-attachment:scroll;
-    }
-    .backg-main
-    {
-        background-image:  url("images/main.png");
-    }
-    .backg-slide
-    {
-        padding-top: 30vh;
-    }
-    .backg-solution
-    {
-        background-image:  url("images/solution.png");
-    }
-    .backg-application
-    {   
-        background-image:  url("images/application.png");
-    }
-    .backg-benefit
-    {   
-        background-image:  url("images/benefit.png");
-    }
-    .backg-about
-    {   
-        background-image:  url("images/about.png");
-    }
-    .backg-content
-    {
-        background-image:  none !important;
-    }
-    .text-box-title /* max-width: 480px */
+    
+    .text-box-title
     {
         padding-top: 32vh;
     }
-    .text-box-main-title
+    .text-box-content
     {
-        padding-bottom: 28px;
+        padding-top: 60px;
+        padding-bottom: 120px;
+    }
+    .text-box-section
+    {
+        padding-bottom: 20px;
+    }
+    .text-box-app
+    {
+        padding-top: 10px;
     }
     .text-box li
     {
@@ -697,111 +848,191 @@ body
     {
         color:#2e2e2e;
     }
-    .text-box h1 
+    .text-box h1
     {
-        text-align: center;
-        font-size: 48px;
-        /*color:#2e2e2e;*/
     }
     .text-box h2 
     {
-        text-align: center;
-        font-size: 32px;
-        /*color:#2e2e2e;*/
     }
     .text-box h3 
     {
-        text-align: center;
         font-size: 36px;
-        /*color:#2e2e2e;*/
     }
     .text-box h4 
     {
         color:#2e2e2e;
     }
-    .text-box h5
-    {
-        font-size: 14px;
-    }
     .text-box p a.link-button 
     {
         padding: 8px 14px;
-        font-size: 14px;
     }
-    .text-box-main-icon
+        .video-container 
     {
-        width: 80%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .circle-border 
-    {
-        border: 2px;
-        border-style: solid;
-        border-color: #aaaaaa;
+        margin-top: 40px;
+        margin-bottom: 60px;
     }
 }
 
-@media (min-width: 0px) and (max-width: 320px)
+@media only screen 
+  and (min-device-width: 480px) 
+  and (max-device-width: 768px)
+  and (orientation: landscape) 
 {
-    .logo
+    .slide-box
+    {
+        width: 40%;
+    }
+    .text-box-title
+    {
+        padding-top: 20vh;
+    }
+    .text-box-content
+    {
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+    .text-box-section
+    {
+        padding-bottom: 20px;
+    }
+    .text-box-app
+    {
+        padding-top: 10px;
+
+    }
+    .text-box li
+    {
+        color:#2e2e2e;
+        font-size: 16px;
+    }
+    .text-box p
+    {
+        color:#2e2e2e;
+        font-size: 16px;
+    }
+    .text-box h1
+    {
+    }
+    .text-box h2 
+    {
+    }
+    .text-box h3 
+    {
+        font-size: 28px;
+    }
+    .text-box h4 
+    {
+        color:#2e2e2e;
+    }
+    .text-box p a.link-button 
+    {
+        padding: 8px 14px;
+    }
+    .video-container 
+    {
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (orientation: landscape) 
+{
+    .slide-box
+    {
+        width: 40%;
+    }
+    .text-box-title
+    {
+        padding-top: 16vh;
+    }
+    .text-box-content
+    {
+        padding-top: 40px;
+        padding-bottom: 80px;
+    }
+    .text-box-section
+    {
+        padding-bottom: 20px;
+    }
+    .text-box-app
+    {
+        padding-top: 10px;
+    }
+    .text-box li
+    {
+        color:#2e2e2e;
+        font-size: 16px;
+    }
+    .text-box p
+    {
+        color:#2e2e2e;
+        font-size: 16px;
+    }
+    .text-box h1
+    {
+    }
+    .text-box h2 
+    {
+    }
+    .text-box h3 
+    {
+        font-size: 24px;
+    }
+    .text-box h4 
+    {
+        color:#2e2e2e;
+    }
+    .text-box p a.link-button 
+    {
+        padding: 8px 14px;
+        font-size: 14px;
+    }
+    .video-container 
+    {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 0px) 
+  and (max-device-width: 320px)
+  and (orientation: landscape) 
+{
+
+}
+
+/* Size Portrait */
+@media only screen 
+  and (min-device-height: 1025px)
+  and (max-device-height: 1280px)
+  and (orientation: portrait) 
+{
+    .slide-box
     {
         width: 72%;
-        padding-top: 0;
-        padding-left: 0;
-        padding-right: 0;
-        padding-bottom: 4px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
     }
-   .award
+    .text-box-title
     {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 48px;
+        padding-top: 32vh;
     }
-    .backg
-    {   
-        background-attachment:scroll;
-    }
-    .backg-main
+    .text-box-content
     {
-        background-image:  url("images/main.png");
+        padding-top: 100px;
+        padding-bottom: 140px;
     }
-    .backg-slide
+    .text-box-section
     {
-        padding-top: 30vh;
+        padding-bottom: 20px;
     }
-    .backg-solution
+    .text-box-app
     {
-        background-image:  url("images/solution.png");
-    }
-    .backg-application
-    {   
-        background-image:  url("images/application.png");
-    }
-    .backg-benefit
-    {   
-        background-image:  url("images/benefit.png");
-    }
-    .backg-about
-    {   
-        background-image:  url("images/about.png");
-    }
-    .backg-content
-    {
-        background-image:  none !important;
-    }
-    .text-box-title /* max-width: 320px */
-    {
-        padding-top: 24vh;
-    }
-    .text-box-main-title
-    {
-        padding-bottom: 28px;
+        padding-top: 40px;
+        padding-left: 12%;
+        padding-right: 12%;
     }
     .text-box li
     {
@@ -811,49 +1042,313 @@ body
     {
         color:#2e2e2e;
     }
-    .text-box h1 
+    .text-box h1
     {
-        text-align: center;
-        font-size: 100px;
-        /*color:#2e2e2e;*/
     }
     .text-box h2 
     {
-        text-align: center;
-        font-size: 36px;
-        /*color:#2e2e2e;*/
     }
     .text-box h3 
     {
-        text-align: center;
+        font-size: 64px;
+    }
+    .text-box h4
+    {
+        color:#2e2e2e;
+    }
+    .video-container 
+    {
+        margin-top: 40px;
+        margin-bottom: 80px;
+    }
+}
+
+@media only screen 
+  and (min-device-height: 961px)
+  and (max-device-height: 1024px)
+  and (orientation: portrait) 
+{
+    .slide-box
+    {
+        width: 60%;
+    }
+    .text-box-title
+    {
+        padding-top: 34vh;
+    }
+    .text-box-content
+    {
+        padding-top: 60px;
+        padding-bottom: 120px;
+    }
+    .text-box-section
+    {
+        padding-bottom: 20px;
+    }
+    .text-box-app
+    {
+        padding-top: 20px;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+    .text-box li
+    {
+        color:#2e2e2e;
+    }
+    .text-box p
+    {
+        color:#2e2e2e;
+    }
+    .text-box h1
+    {
+    }
+    .text-box h2 
+    {
+    }
+    .text-box h3 
+    {
+        font-size: 48px;
+    }
+    .text-box h4
+    {
+        color:#2e2e2e;
+    }
+    .video-container 
+    {
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
+}
+
+@media only screen 
+  and (min-device-height: 769px)
+  and (max-device-height: 960px)
+  and (orientation: portrait) 
+{
+    .slide-box
+    {
+        width: 72%;
+    }
+    .text-box-title
+    {
+        padding-top: 32vh;
+    }
+    .text-box-content
+    {
+        padding-top: 60px;
+        padding-bottom: 120px;
+    }
+    .text-box-section
+    {
+        padding-bottom: 20px;
+    }
+    .text-box-app
+    {
+        padding-top: 20px;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+    .text-box li
+    {
+        color:#2e2e2e;
+    }
+    .text-box p
+    {
+        color:#2e2e2e;
+    }
+    .text-box h1
+    {
+    }
+    .text-box h2 
+    {
+    }
+    .text-box h3 
+    {
+        font-size: 48px;
+    }
+    .text-box h4
+    {
+        color:#2e2e2e;
+    }
+    .video-container 
+    {
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
+}
+
+@media only screen 
+  and (min-device-height: 661px)
+  and (max-device-height: 768px)
+  and (orientation: portrait) 
+{
+    .slide-box
+    {
+        width: 80%;
+    }
+    .text-box-title
+    {
+        padding-top: 28vh;
+    }
+    .text-box-content
+    {
+        padding-top: 60px;
+        padding-bottom: 120px;
+    }
+    .text-box-section
+    {
+        padding-bottom: 20px;
+    }
+    .text-box-app
+    {
+        padding-top: 10px;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    .text-box li
+    {
+        color:#2e2e2e;
+    }
+    .text-box p
+    {
+        color:#2e2e2e;
+    }
+    .text-box h1
+    {
+    }
+    .text-box h2 
+    {
+    }
+    .text-box h3 
+    {
         font-size: 36px;
-        /*color:#2e2e2e;*/
+    }
+    .text-box h4
+    {
+        color:#2e2e2e;
+    }
+    .video-container 
+    {
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
+}
+
+@media only screen 
+  and (min-device-height: 481px)
+  and (max-device-height: 660px)
+  and (orientation: portrait) 
+{
+    .text-box-title
+    {
+        padding-top: 28vh;
+    }
+    .text-box-content
+    {
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+    .text-box-section
+    {
+        padding-bottom: 20px;
+    }
+    .text-box-app
+    {
+        padding-top: 10px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .text-box li
+    {
+        color:#2e2e2e;
+        font-size: 16px;
+    }
+    .text-box p
+    {
+        color:#2e2e2e;
+        font-size: 16px;
+    }
+    .text-box h1
+    {
+    }
+    .text-box h2 
+    {
+    }
+    .text-box h3 
+    {
+        font-size: 32px;
     }
     .text-box h4 
     {
         color:#2e2e2e;
+        font-size: 18px;
     }
-    .text-box h5
+    .video-container 
     {
-        font-size: 12px;
+        margin-top: 20px;
+        margin-bottom: 60px;
     }
-    .text-box p a.link-button 
-    {
-        padding: 8px 14px;
-        font-size: 14px;
-    }
-    .text-box-main-icon
-    {
-        width: 100%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .circle-border 
-    {
-        border: 2px;
-        border-style: solid;
-        border-color: #aaaaaa;
-    }
+}
 
+
+@media only screen 
+  and (max-device-height: 480px)
+  and (orientation: portrait) 
+{
+    .text-box-title
+    {
+        padding-top: 28vh;
+    }
+    .text-box-content
+    {
+        padding-top: 40px;
+        padding-bottom: 80px;
+    }
+    .text-box-section
+    {
+        padding-bottom: 20px;
+    }
+    .text-box-app
+    {
+        padding-top: 10px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .text-box li
+    {
+        color:#2e2e2e;
+        font-size: 16px;
+    }
+    .text-box p
+    {
+        color:#2e2e2e;
+        font-size: 16px;
+    }
+    .text-box h1
+    {
+    }
+    .text-box h2 
+    {
+    }
+    .text-box h3 
+    {
+        font-size: 28px;
+    }
+    .text-box h4 
+    {
+        color:#2e2e2e;
+        font-size: 18px;
+    }
+    .video-container 
+    {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 0px) 
+  and (max-device-width: 320px)
+  and (orientation: portrait) 
+{
 }
