@@ -1,0 +1,31 @@
+.version.home_phone /* version checker */
+{
+	color: #000018;
+	background-color: #FA3E36;
+}
+
+#page
+{
+	z-index: 1;
+	min-height: 0px;
+	background-image: none;
+	border-width: 0px;
+	border-color: #000000;
+	background-color: transparent;
+	padding-top: 125px;
+	padding-bottom: 374px;
+	width: 100%;
+	max-width: 380px;
+}
+
+#muse_css_mq,.html
+{
+	background-color: #FFFFFF;
+}
+
+body
+{
+	position: relative;
+	min-width: 320px;
+}
+
