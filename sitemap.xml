@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://www.drive.feg.com.tw/images/drive-feg-logo-01.png</loc>
+    <lastmod>2016-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.drive.feg.com.tw/images/c3-01180x172.png</loc>
+    <lastmod>2016-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://www.drive.feg.com.tw/phone/home-phone.html</loc>
     <lastmod>2016-05-19</lastmod>
     <changefreq>weekly</changefreq>

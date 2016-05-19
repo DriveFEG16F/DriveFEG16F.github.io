@@ -1,7 +1,7 @@
-<manifest alg="2" build="2015.1.2.344" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive" exportTarget="other" domain="www.drive.feg.com.tw" resolutions="1x" timestamp="1463648058343">
+<manifest alg="2" build="2015.1.2.344" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive" exportTarget="other" domain="www.drive.feg.com.tw" resolutions="1x" timestamp="1463663579650">
   <folder name="css">
     <file name="site_global.css" crc="131700929"/>
-    <file name="index.css" crc="336697070" ref="index"/>
+    <file name="index.css" crc="4038100586" ref="index"/>
     <file name="iefonts_index.css" crc="4008758652" ref="index"/>
   </folder>
   <folder name="scripts">
@@ -14,25 +14,22 @@
     <file name="museredirect.js" crc="71780213" ref="index"/>
   </folder>
   <folder name="images">
-    <file name="drive-feg-logo.svg" crc="4055841765" ref="phone>index"/>
-    <file name="drive feg logo_poster_.png" crc="19952271" ref="phone>index"/>
+    <file name="drive-feg-logo-01.png" crc="4168570433" seo="true" ref="phone>index:index"/>
     <file name="o12.jpg" crc="393747201" ref="phone>index:index"/>
     <file name="img_7912b-u1509-fr.jpg" crc="4198548452" ref="phone>index"/>
-    <file name="c1.svg" crc="513945629" ref="phone>index:index"/>
-    <file name="c1_poster_.png" crc="28784513" ref="phone>index"/>
-    <file name="drive-feg-logo2.svg" crc="4055841765" ref="index"/>
-    <file name="drive-feg-logo_poster_.png" crc="3851011128" ref="index"/>
+    <file name="c3-01180x172.png" crc="4226137026" seo="true" ref="phone>index"/>
     <file name="img_7912b.jpg" crc="221457859" ref="index"/>
     <file name="u526-grad.png" crc="3961916043" ref="index"/>
+    <file name="c3-01-u1934.png" crc="13145670" ref="index"/>
   </folder>
   <folder name="phone">
     <folder name="css">
       <file name="home-phone.css" crc="419053110" ref="phone>home-phone"/>
-      <file name="index.css" crc="4113448946" ref="phone>index"/>
+      <file name="index.css" crc="249475578" ref="phone>index"/>
       <file name="iefonts_index.css" crc="4089716056" ref="phone>index"/>
     </folder>
-    <file name="index.html" crc="4110586260" seo="true" mt="1463648056213" redirect="true"/>
+    <file name="index.html" crc="28678798" seo="true" mt="1463663577713" redirect="true"/>
     <file name="home-phone.html" crc="3853655318" seo="true" mt="1463647908236" redirect="false"/>
   </folder>
-  <file name="index.html" crc="4170372853" seo="true" mt="1463648056214" redirect="true"/>
+  <file name="index.html" crc="4148212345" seo="true" mt="1463663577716" redirect="true"/>
 </manifest>
