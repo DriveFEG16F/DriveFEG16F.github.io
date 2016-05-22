@@ -82,49 +82,16 @@ body
     background-image:  url("images/alpha_03.jpg");
 }
 
-/* NAVBAR */
-.header
-{
-    position: fixed;
-    z-index:9999;
-}
-.navbar-style 
-{
-    position: fixed !important;
-    background-image: none !important;
-    background: #000000 !important;
-    border-radius: 0px !important;
-    box-shadow: none !important;
-    text-shadow: none !important;
-    border-bottom-style: none !important;
-/*    opacity: 0.8;*/
-/*    padding-left: 6%;
-    padding-right: 6%;*/
-}
-.navbar-logo {
-}
-.navbar-style h6
-{
-    font-family: "helveticaneueltstd-roman", Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    font-size: 18px;
-    color: #2e2e2e;
-    float: left;  
-    padding-top: 4px;
-    max-height: 20px;
-}
-.navbar-style li
-{
-    font-family: "helveticaneueltstd-lt", Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    color: #2e2e2e;
-}
-
 /* IMAGE */
 .img-responsive
 {
     width: 100% !important;
+}
+.img-center
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* BACKGROUND */
@@ -248,7 +215,7 @@ body
 .text-box h3
 {
     font-family: "helveticaneueltstd-hv", "Arial Black", Helvetica, sans-serif;
-    color: #ffffff;
+    color: #000000;
     font-size: 40px;
     font-weight: bold;
     line-height: 1;
