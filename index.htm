@@ -1,13 +1,191 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>FEX</title>
-</head>
-<body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>DynaFeed</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
 
-<h1>MARATHON</h1>
-<p>RUN WITH YOUR HEART</p>
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="style_alpha.css" type="text/css">
+      <link rel="stylesheet" href="nav/css/naccss.css" type="text/css">
+      <link href="css/lightbox.css" rel="stylesheet">
+      <link href='http://fonts.googleapis.com/css?family=Poppins:400,600,700,500,300' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,400italic,500,500italic,300,100italic,100,300italic' rel='stylesheet' type='text/css'>
 
-</body>
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+     <!-- Add vUnit.js to the head to avoid FOUC -->
+    <script type="text/javascript" src="js/vunit.js"></script>
+    <script type="text/javascript">
+      new vUnit({
+        CSSMap: {
+          '.vh': {
+            property: 'height',
+            reference: 'vh'
+          },
+          '.vw': {
+            property: 'width',
+            reference: 'vw'
+          },
+          '.vwfs': {
+            property: 'font-size',
+            reference: 'vw'
+          },
+          '.vhmt': {
+            property: 'margin-top',
+            reference: 'vh'
+          },
+          '.vhmb': {
+            property: 'margin-bottom',
+            reference: 'vh'
+          },
+          '.vminw': {
+            property: 'width',
+            reference: 'vmin'
+          },
+          '.vmaxw': {
+            property: 'width',
+            reference: 'vmax'
+          }
+        }
+      }).init();
+    </script>  
+  </head>
+
+  <body>
+    <nav class="nav is-fixed " role="navigation">
+      <div class="col-md-12">
+        <button class="nav-toggle">
+          <div class="icon-menu"> 
+            <span class="line line-1"></span> 
+            <span class="line line-2"></span> 
+            <span class="line line-3"></span> 
+          </div>
+        </button>
+        <div class="nav-container">
+          <ul class="nav-menu menu">
+            <li class="menu-item has-dropdown"> <a href="#!" class="menu-link">Home</a>
+              <ul class="nav-dropdown menu">
+                <li class="menu-item"><a href="#!" class="menu-link">jQuery</a></li>
+                <li class="menu-item has-dropdown"> <a href="#!" class="menu-link">Front-end</a>
+                  <ul class="nav-dropdown menu">
+                    <li class="menu-item"><a href="#!" class="menu-link">Html5</a></li>
+                    <li class="menu-item"><a href="#!" class="menu-link">CSS3</a></li>
+                    <li class="menu-item"><a href="#!" class="menu-link">Javascript</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item"> <a href="#!" class="menu-link">jQueryScript</a> </li>
+              </ul>
+            </li>
+            <li class="menu-item"> <a href="#!" class="menu-link">Blog</a> </li>
+            <li class="menu-item"> <a href="#!" class="menu-link">Contact</a> </li>
+            <li class="menu-item"> <a href="#!" class="menu-link">About</a> </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- MAIN -->
+    <div class="container-fluid main" id="home">
+      <div class="row">
+        <div class="col-md-12 backg backg-main">
+          <div class="carousel slide carousel-fade" id="myCarousel" data-ride="carousel" data-pause="false" data-interval="4000">
+
+            <!-- Indicators -->
+            <!-- <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol> -->
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+
+              <div class="item active">
+                <div class="slide-box slide-01"></div>
+              </div> <!-- item 0 -->
+              <div class="item">
+                <div class="slide-box slide-02"></div>
+              </div> <!-- item 1 -->
+              <div class="item">
+                <div class="slide-box slide-03"></div>
+              </div> <!-- item 2 -->
+            </div> <!-- carousel-inner -->
+          </div>
+        </div> <!-- col-md-12 -->   
+      </div> <!-- row -->
+    </div> <!-- container-fluid -->
+
+    <div class="container-fluid main">
+      <div class="row">
+          <div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12 backg-content">
+            <div class="col-md-4 col-sm-12 col-xs-12 backg-section text-box">
+              <img src="images/apparel_01.jpg" class="img-responsive" alt="">
+              <p>
+                跑步可不只是跑步，認真練跑之餘，我們還要從跑姿、柔軟度、肌力、心態、與飲食等方面，打造一個跑者的身體，才能讓跑步成為一件快樂、能打從心裡願意全心投入的事；如果因為缺乏跑者的某個元素，導致受傷或身心疲乏，那一定不是我們拾起跑鞋，邁開第一步的初衷。
+              </p>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12 backg-section text-box">
+              <img src="images/training_01.jpg" class="img-responsive" alt="">
+              <p>
+                肌力一向是被跑者所忽略的訓練內容，我們都知道要安排跑步菜單、跑後要記得伸展，但往往懶得進行肌力訓練，尤其是對於這號稱「有氧耐力」的跑步運動來說，肌肉是否有力，好像不太重要。
+              </p>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12 backg-section text-box">
+              <img src="images/nutrition_01.jpg" class="img-responsive" alt="">
+              <p>
+                今天訓練補給站要介紹的是腹、背、側、與腿的綜合肌力訓練，這些動作由N+TC 訓練課程的內容中衍生而來，是個不必上健身房，在家就可以進行的自我訓練動作，試著在平常的練習中融入這些練習，持之以恆地做，你將會有意想不到的收穫。
+              </p>
+            </div>
+          </div> <!-- col-md-12 -->    
+      </div> <!-- row -->
+    </div> <!-- container-fluid -->
+
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script><script>
+      $(function() {
+          var html = $('html, body'),
+              navContainer = $('.nav-container'),
+              navToggle = $('.nav-toggle'),
+              navDropdownToggle = $('.has-dropdown');
+
+          // Nav toggle
+          navToggle.on('click', function(e) {
+              var $this = $(this);
+              e.preventDefault();
+              $this.toggleClass('is-active');
+              navContainer.toggleClass('is-visible');
+              html.toggleClass('nav-open');
+          });
+        
+          // Nav dropdown toggle
+          navDropdownToggle.on('click', function() {
+              var $this = $(this);
+              $this.toggleClass('is-active').children('ul').toggleClass('is-visible');
+          });
+        
+          // Prevent click events from firing on children of navDropdownToggle
+          navDropdownToggle.on('click', '*', function(e) {
+              e.stopPropagation();
+          });
+      });
+    </script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-36251023-1']);
+      _gaq.push(['_setDomainName', 'jqueryscript.net']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
+  </body>
 </html>
-
