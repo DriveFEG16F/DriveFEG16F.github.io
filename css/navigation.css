@@ -338,6 +338,11 @@ body
     height: 50px; /* Desktop Navigation Bar Height */
   }
 
+  .nav-container
+  {
+    width: 100%;
+  }
+
   .nav,
   .nav-container,
   .nav-container.is-visible 
