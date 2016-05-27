@@ -334,7 +334,7 @@ body
   .nav 
   { 
     position: fixed;
-    background-color: #444444; /* Desktop Navigation Bar Color */
+    background-color: #ffffff; /* Desktop Navigation Bar Color */
     height: 50px; /* Desktop Navigation Bar Height */
   }
 

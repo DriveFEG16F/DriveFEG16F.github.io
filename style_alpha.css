@@ -136,12 +136,14 @@ body
     padding-right: 1%; 
     padding-left: 1%;
 }
-.backg-contact
+.backg-left
 {   
-    background-image:  url("images/contact-r.jpg");
-    /*background-color: #000000 !important;*/
+    padding-right: 10%; 
 }
-
+.backg-right
+{   
+    padding-left: 10%; 
+}
 /* TEXT BOX */
 .text-test
 {
@@ -224,7 +226,7 @@ body
 {
     text-transform: uppercase;
     font-family: "helveticaneueltstd-hv", "Arial Black", Helvetica, sans-serif;
-    color: #ffffff; 
+    color: #000000; 
     font-size: 20px;; 
     font-weight: bold;
 
@@ -495,6 +497,13 @@ body
         margin-left: 0;
         padding-right: 0; 
         padding-left: 0;
+    }
+    .backg-left,
+    .backg-right,
+    .text-box
+    {   
+        padding-right: 10%; 
+        padding-left: 10%;
     }
     .text-box-title
     {
