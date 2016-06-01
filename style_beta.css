@@ -181,27 +181,32 @@ a.button:hover, a.button:active
     color: #ffffff;
 }
 
+/* TABLE */
+table
+{
+    width: 100%;
+    margin-top: 5%; 
+}
+tr
+{
+}
+th
+{
+    text-align: center;
+    border-top: 1px solid #888888 !important;
+    border-bottom: 1px solid #888888 !important;
+    padding: 0.3em 0 0.3em 0 !important;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
 /* TEXT BOX */
 .text-box
 {
     display: block;
     margin: 0 0 0 0;
     padding: 0 0 0 0;
-}
-.text-box ul
-{
-    padding-left: 1em;
-    margin: 0;
-}
-.text-box li
-{
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: 200;
-    font-size: 18px;
-    color: #ffffff;
-    word-spacing: 0.2em;
-    line-height: 160%;
-    list-style-position: outside;
 }
 .text-box h1
 {
@@ -229,6 +234,23 @@ a.button:hover, a.button:active
 }
 .text-box h3
 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.04em;
+    /*word-spacing: 0.2em;*/
+    line-height: 150%;
+    color: #000000;
+    padding: 0 0 0 0; /* T R B L */
+    margin: 0 0 0 0; /* T R B L */
+}
+.text-box h3 span
+{
+    font-weight: 800;
+    font-size: 2em;
+    line-height: 150%;
+    letter-spacing: 0;
+    color: #ff0000;
 }
 .text-box h4
 {
@@ -243,15 +265,32 @@ a.button:hover, a.button:active
     line-height: 150%;
     color: #000000;
 }
+.text-box p span
+{
+    font-weight: 600;
+    letter-spacing: 0;
+}
 .text-box a
 {
     text-decoration: underline;
 }
-.text-box p span
-{
-}
 .text-box p span a
 {
+}
+.text-box ul
+{
+    padding-left: 1em;
+    margin: 0;
+}
+.text-box li
+{
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    color: #ffffff;
+    word-spacing: 0.2em;
+    line-height: 160%;
+    list-style-position: outside;
 }
 
 /* VIDEO */
@@ -325,6 +364,7 @@ a.button:hover, a.button:active
     {
         font-size: 36px;
     }
+    .text-box h3,
     .text-box p
     {
         font-size: 18px;
@@ -359,7 +399,12 @@ a.button:hover, a.button:active
     {
         margin: 0 0 0 0; /* T R B L */
     }
+    .text-box h3,
     .text-box p
+    {
+        font-size: 16px;
+    }
+    th
     {
         font-size: 16px;
     }
@@ -398,7 +443,12 @@ a.button:hover, a.button:active
     {
         font-size: 32px;
     }
+    .text-box h3,
     .text-box p
+    {
+        font-size: 18px;
+    }
+    th
     {
         font-size: 18px;
     }
@@ -498,6 +548,7 @@ a.button:hover, a.button:active
     {
         margin: 0 0 0 0; /* T R B L */
     }
+    .text-box h3,
     .text-box p
     {
         font-size: 16px;
@@ -506,6 +557,14 @@ a.button:hover, a.button:active
     {
         margin-top: 15%;
         width: 80%;
+    }
+    table
+    {
+        margin-top: 11%;
+    }
+    th
+    {
+        font-size: 16px;
     }
 
 }
