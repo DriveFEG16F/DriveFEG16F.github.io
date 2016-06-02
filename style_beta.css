@@ -94,6 +94,10 @@ body
     -o-background-size: cover;
 
 }
+.backg-hero
+{
+    background-attachment:scroll;
+}
 .backg-frame
 {
     padding-left: 2%; 
@@ -106,6 +110,11 @@ body
 {
     background-image: url("images/main_01.jpg");
     padding-top: 50%; /* 2:1 */
+}
+.backg-main-xl
+{
+    background-image: url("images/main_01_xl.jpg");
+    padding-top: 100%; /* 2:1 */
 }
 .backg-man
 {
@@ -542,6 +551,11 @@ th
         background-attachment:scroll;
     }
     .backg-main
+    {
+        background-image: url("images/main_01_m.jpg");
+        padding-top: 180%; /* 10:18 */
+    }
+    .backg-main-xl
     {
         background-image: url("images/main_01_m.jpg");
         padding-top: 180%; /* 10:18 */
