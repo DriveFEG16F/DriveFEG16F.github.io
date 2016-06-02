@@ -122,6 +122,11 @@ body
     background-image: url("images/man_02.jpg");
     padding-top: 43.75%; /* 16:7 */
 }
+.backg-marathon
+{
+    background-image: url("images/marathon.jpg");
+    padding-top: 43.75%; /* 16:7 */
+}
 .backg-img
 {
     display: block;
@@ -316,6 +321,35 @@ th
 }
 
 /* ICON */
+.line-up
+{
+    float: left;
+}
+.color-ball
+{
+    font-size: 28px;
+    border-radius: 50%;
+    width: 1em;
+    height: 1em;
+    padding: 0 0 0 0; /* T R B L */
+    margin: 0 0 0 0.3em; /* T R B L */
+}
+.pink
+{
+    background-color: rgb(220, 20, 110);
+}
+.grey
+{
+    background-color: rgb(90, 100, 110);
+}
+.green
+{
+    background-color: rgb(160, 240, 0);
+}
+.orange
+{
+    background-color: rgb(240, 40, 0);
+}
 .circle 
 {
     border-radius: 50%;
@@ -369,6 +403,10 @@ th
     {
         font-size: 18px;
     }
+    .color-ball
+    {
+        font-size: 24px;
+    }
 }
 @media (min-width: 0px) and (max-width: 1024px)
 {
@@ -407,6 +445,10 @@ th
     th
     {
         font-size: 16px;
+    }
+    .color-ball
+    {
+        font-size: 20px;
     }
 
 }
@@ -451,6 +493,10 @@ th
     th
     {
         font-size: 18px;
+    }
+    .color-ball
+    {
+        font-size: 24px;
     }
 }
 
@@ -515,6 +561,11 @@ th
         background-image: url("images/man_02_m.jpg");
         padding-top: 100%; /* 16:7 */
     }
+    .backg-marathon
+    {
+        background-image: url("images/marathon_m.jpg");
+        padding-top: 100%; /* 16:7 */
+    }
     .backg-img
     {
         margin-top: 15%;
@@ -565,6 +616,10 @@ th
     th
     {
         font-size: 16px;
+    }
+    .color-ball
+    {
+        font-size: 20px;
     }
 
 }
