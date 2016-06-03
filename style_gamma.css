@@ -336,7 +336,7 @@ th
 }
 .color-ball
 {
-    font-size: 28px;
+    font-size: 40px;
     border-radius: 50%;
     width: 1em;
     height: 1em;
@@ -349,6 +349,8 @@ th
 }
 .grey
 {
+    background-image: url("images/grey.jpg");
+    background-size: cover;
     background-color: rgb(90, 100, 110);
 }
 .green
@@ -414,7 +416,7 @@ th
     }
     .color-ball
     {
-        font-size: 24px;
+        font-size: 32px;
     }
 }
 @media (min-width: 0px) and (max-width: 1024px)
@@ -457,7 +459,7 @@ th
     }
     .color-ball
     {
-        font-size: 20px;
+        font-size: 28px;
     }
 
 }
@@ -505,7 +507,7 @@ th
     }
     .color-ball
     {
-        font-size: 24px;
+        font-size: 32px;
     }
 }
 
@@ -625,7 +627,7 @@ th
     }
     table
     {
-        margin-top: 11%;
+        margin-top: 19%;
     }
     th
     {
@@ -633,7 +635,7 @@ th
     }
     .color-ball
     {
-        font-size: 20px;
+        font-size: 28px;
     }
 
 }
