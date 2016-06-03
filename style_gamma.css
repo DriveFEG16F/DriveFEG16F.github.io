@@ -558,7 +558,7 @@ th
     .backg-main-xl
     {
         background-image: url("images/main_01_m_xl.jpg");
-        padding-top: 200%; /* 1:2 */
+        padding-top: 180%; /* 1:2 */
     }
     .backg-man
     {
