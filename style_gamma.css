@@ -135,6 +135,8 @@ body
 {
     background-image: url("images/marathon.jpg");
     padding-top: 43.75%; /* 16:7 */
+    cursor: pointer;
+    cursor: hand;
 }
 .backg-img
 {
@@ -182,7 +184,6 @@ a.button:link, a.button:visited
     text-decoration: none;
     display: block;
     font-size: 16px;
-    display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5%;
@@ -193,6 +194,11 @@ a.button:hover, a.button:active
     border: 1px solid #222222;
     background-color: #222222;
     color: #ffffff;
+}
+a.div-button
+{
+    cursor: pointer;
+    cursor: hand;
 }
 
 /* TABLE */
