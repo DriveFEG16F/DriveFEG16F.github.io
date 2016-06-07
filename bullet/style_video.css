@@ -1,0 +1,21 @@
+#myVideo, #myCanvas
+{
+	width: 640px;
+	height: 360px;
+	position:absolute;
+	top: 0;
+	left: 0;
+}
+.block
+{
+	z-index: 1;
+	/*background-color: #ff0000;*/
+}
+.youtube, .block
+{
+	width: 640px;
+	height: 360px;
+	position:absolute;
+	top: 0;
+	left: 0;
+}
