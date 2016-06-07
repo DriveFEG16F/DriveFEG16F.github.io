@@ -29,7 +29,6 @@ function onMouseDown(event)
 function onTouchStart(event)
 {
     event.preventDefault();
-    clicked = true;
     startingPoint = event.touches[0].clientX;
     player.playVideo();
     console.log("Position: " + startingPoint);
@@ -48,7 +47,6 @@ function onMouseUp(event)
 function onTouchEnd(event)
 {
     event.preventDefault();
-    clicked = false;
     startingPoint = null;
     console.log("Up");
     console.log("Position: " + startingPoint);
@@ -94,36 +92,33 @@ function onTouchMove(event)
 {
     event.preventDefault();
 
-    if(clicked)
-    {  
-        moveX = event.changedTouches[0].clientX - startingPoint;
-        document.getElementById("demo").innerHTML = "MOVE:" + moveX;
+    moveX = event.changedTouches[0].clientX - startingPoint;
+    document.getElementById("demo").innerHTML = "MOVE:" + moveX;
 
-        if(moveX != 0)
-            {
-                moveX = moveX / Math.abs(moveX);    
-            }
+    if(moveX != 0)
+        {
+            moveX = moveX / Math.abs(moveX);    
+        }
 
-        console.log("moveX: " + moveX);
+    console.log("moveX: " + moveX);
 
-        frame = player.getCurrentTime() + ( clipDuration * moveX ) + ( 1 / 24 );
+    frame = player.getCurrentTime() + ( clipDuration * moveX ) + ( 1 / 24 );
 
-        console.log("Time: " + player.getCurrentTime());
+    console.log("Time: " + player.getCurrentTime());
 
-        if(frame <= 0)
-            {
-                frame = videoDuration + frame;
-            }
-        if(frame > videoDuration)
-            {
-                frame = frame - videoDuration;
-            }
+    if(frame <= 0)
+        {
+            frame = videoDuration + frame;
+        }
+    if(frame > videoDuration)
+        {
+            frame = frame - videoDuration;
+        }
 
-        console.log("Fram: " + frame);
+    console.log("Fram: " + frame);
 
-        player.seekTo(frame);
-        startingPoint = event.changedTouches[0].clientX; 
-    }
+    player.seekTo(frame);
+    startingPoint = event.changedTouches[0].clientX; 
 }
 
 // Youtube
