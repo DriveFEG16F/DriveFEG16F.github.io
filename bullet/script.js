@@ -22,7 +22,7 @@ function onMouseDown(event)
     startingPoint = event.clientX;
     console.log("Clicked");
     console.log("Position: " + startingPoint);
-    // player.playVideo();
+    player.playVideo();
     document.getElementById("demo").innerHTML = "TOUCH: " + startingPoint;
 }
 
@@ -31,6 +31,7 @@ function onTouchStart(event)
     event.preventDefault();
     clicked = true;
     startingPoint = event.touches[0].clientX;
+    player.playVideo();
     console.log("Position: " + startingPoint);
     document.getElementById("demo").innerHTML = "TOUCH: " + startingPoint;
 }
@@ -56,7 +57,6 @@ function onTouchEnd(event)
 
 function onMouseMove(event)
 {
-    event.preventDefault();
     if(clicked)
     {       
         moveX = event.clientX - startingPoint;
@@ -92,10 +92,38 @@ function onMouseMove(event)
 
 function onTouchMove(event)
 {
-    moveX = event.changedTouches[0].clientX - startingPoint;
-    document.getElementById("demo").innerHTML = "MOVE:" + moveX;
+    event.preventDefault();
 
-    startingPoint = event.changedTouches[0].clientX; 
+    if(clicked)
+    {  
+        moveX = event.changedTouches[0].clientX - startingPoint;
+        document.getElementById("demo").innerHTML = "MOVE:" + moveX;
+
+        if(moveX != 0)
+            {
+                moveX = moveX / Math.abs(moveX);    
+            }
+
+        console.log("moveX: " + moveX);
+
+        frame = player.getCurrentTime() + ( clipDuration * moveX ) + ( 1 / 24 );
+
+        console.log("Time: " + player.getCurrentTime());
+
+        if(frame <= 0)
+            {
+                frame = videoDuration + frame;
+            }
+        if(frame > videoDuration)
+            {
+                frame = frame - videoDuration;
+            }
+
+        console.log("Fram: " + frame);
+
+        player.seekTo(frame);
+        startingPoint = event.changedTouches[0].clientX; 
+    }
 }
 
 // Youtube
