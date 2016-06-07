@@ -3,9 +3,9 @@ var BLOCK = document.getElementById("myBlock");
 BLOCK.addEventListener('mousedown', this.onMouseDown, false);
 BLOCK.addEventListener('mousemove', this.onMouseMove, false);
 BLOCK.addEventListener('mouseup', this.onMouseUp, false);
-BLOCK.addEventListener("touchstart", this.onMouseDown, false);
-BLOCK.addEventListener("touchmove", onMouseMove, false);
-
+BLOCK.addEventListener("touchstart", this.onTouchStart, false);
+BLOCK.addEventListener("touchmove", onTouchMove, false);
+BLOCK.addEventListener("touchend", onTouchEnd, false);
 
 var videoDuration;
 var clipDuration;
@@ -17,13 +17,22 @@ var moveX;
 var clicked = false;
 
 function onMouseDown(event)
-{
+{   
     clicked = true;
     startingPoint = event.clientX;
     console.log("Clicked");
     console.log("Position: " + startingPoint);
-    player.playVideo();
-    document.getElementById("demo").innerHTML = "TOUCH";
+    // player.playVideo();
+    document.getElementById("demo").innerHTML = "TOUCH: " + startingPoint;
+}
+
+function onTouchStart(event)
+{
+    event.preventDefault();
+    clicked = true;
+    startingPoint = event.touches[0].clientX;
+    console.log("Position: " + startingPoint);
+    document.getElementById("demo").innerHTML = "TOUCH: " + startingPoint;
 }
 
 function onMouseUp(event)
@@ -33,14 +42,25 @@ function onMouseUp(event)
     console.log("Up");
     console.log("Position: " + startingPoint);
     console.log("Duration: " + videoDuration);
+}
 
+function onTouchEnd(event)
+{
+    event.preventDefault();
+    clicked = false;
+    startingPoint = null;
+    console.log("Up");
+    console.log("Position: " + startingPoint);
+    console.log("Duration: " + videoDuration);
 }
 
 function onMouseMove(event)
 {
+    event.preventDefault();
     if(clicked)
     {       
         moveX = event.clientX - startingPoint;
+        document.getElementById("demo").innerHTML = "MOVE:" + moveX;
 
         if(moveX != 0)
         {
@@ -66,9 +86,16 @@ function onMouseMove(event)
 
         player.seekTo(frame);
 
-        startingPoint = event.clientX;
-        document.getElementById("demo").innerHTML = "MOVE";
+        startingPoint = event.clientX;       
     }
+}
+
+function onTouchMove(event)
+{
+    moveX = event.changedTouches[0].clientX - startingPoint;
+    document.getElementById("demo").innerHTML = "MOVE:" + moveX;
+
+    startingPoint = event.changedTouches[0].clientX; 
 }
 
 // Youtube
