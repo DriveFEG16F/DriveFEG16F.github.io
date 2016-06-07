@@ -135,8 +135,8 @@ function onYouTubeIframeAPIReady()
     (
         'video-placeholder', 
         {
-            width: 640,
-            height: 360,
+            width: 800,
+            height: 450,
             videoId: 'vUIWJG2QGIQ',
             playerVars: 
             {

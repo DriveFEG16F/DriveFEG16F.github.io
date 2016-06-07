@@ -13,8 +13,8 @@
 }
 .youtube, .block
 {
-	width: 640px;
-	height: 360px;
+	width: 800px;
+	height: 450px;
 	position:absolute;
 	top: 0;
 	left: 0;
@@ -22,6 +22,6 @@
 #demo
 {
 	position:absolute;
-	top: 400px;
+	top: 480px;
 	left: 0;
 }
