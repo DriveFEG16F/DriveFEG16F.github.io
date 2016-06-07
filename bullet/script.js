@@ -3,6 +3,9 @@ var BLOCK = document.getElementById("myBlock");
 BLOCK.addEventListener('mousedown', this.onMouseDown, false);
 BLOCK.addEventListener('mousemove', this.onMouseMove, false);
 BLOCK.addEventListener('mouseup', this.onMouseUp, false);
+BLOCK.addEventListener("touchstart", this.onMouseDown, false);
+BLOCK.addEventListener("touchmove", onMouseMove, false);
+
 
 var videoDuration;
 var clipDuration;
@@ -20,6 +23,7 @@ function onMouseDown(event)
     console.log("Clicked");
     console.log("Position: " + startingPoint);
     player.playVideo();
+    document.getElementById("demo").innerHTML = "TOUCH";
 }
 
 function onMouseUp(event)
@@ -63,6 +67,7 @@ function onMouseMove(event)
         player.seekTo(frame);
 
         startingPoint = event.clientX;
+        document.getElementById("demo").innerHTML = "MOVE";
     }
 }
 
