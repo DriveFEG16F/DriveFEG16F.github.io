@@ -72,6 +72,15 @@ body
     padding-top: 2%;
     background-color: #ffffff;
 }
+.bar-end
+{
+    z-index: 3;
+    /*position: fixed;*/
+    bottom: 0;
+    width: 100%;
+    padding-top: 10%;
+    background-color: #bbbbbb;
+}
 
 /* BACKGROUND */
 .backg
@@ -106,6 +115,11 @@ body
     padding-bottom: 2%;
     margin: 0 0 0 0;
 }
+.backg-index
+{
+    background-image: url("images/index_main.jpg");
+    padding-top: 56.25%; /* 16:9 */
+}
 .backg-main
 {
     background-image: url("images/main_01.jpg");
@@ -113,8 +127,8 @@ body
 }
 .backg-main-xl
 {
-    background-image: url("images/main_01_xl.jpg");
-    padding-top: 100%; /* 2:1 */
+    background-image: url("images/main_01_xl_h.jpg");
+    padding-top: 56.25%; /* 16:9 */
 }
 .backg-man
 {
@@ -154,6 +168,11 @@ body
     padding-right: 10%; 
     padding-left: 10%;
 /*    width: 80%;*/
+}
+.backg-content
+{
+    margin: 0 0 0 0;
+    padding: 0 10px 0 10px;
 }
 .backg-left
 {   
@@ -562,6 +581,11 @@ th
     {
         background-image: url("images/main_01_m.jpg");
         padding-top: 180%; /* 10:18 */
+    }
+    .backg-index
+    {
+        background-image: url("images/index_main_m.jpg");
+        padding-top: 180%; /* 16:9 */
     }
     .backg-main-xl
     {

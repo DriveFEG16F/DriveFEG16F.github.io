@@ -30,7 +30,7 @@ body
   width: 100%;
   height: 60px;
   z-index: 10000;
-  background-color: #000000; /* Mobile Navigation Bar Color */
+  background-color: #ffffff; /* Mobile Navigation Bar Color */
   padding: 0 0 0 0;
   margin: 0 0 0 0;
 }
@@ -93,7 +93,7 @@ body
   min-height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #ff0000; /* Mobile Navigation Container Color */
+  background-color: #ffffff; /* Mobile Navigation Container Color */
   -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
   -webkit-transform: translateX(-100%);
@@ -123,7 +123,7 @@ body
   padding: 1.25rem 1rem;
   margin: 0;
   border: 0;
-  background-color: #ff0000; /* Mobile Navigation Toggle Color */
+  background-color: #ffffff; /* Mobile Navigation Toggle Color */
 }
 
 /* Nav toggle icon */
@@ -147,7 +147,7 @@ body
   display: block;
   width: 100%;
   height: 4px;
-  background-color: #ffffff;
+  background-color: #000000; /* Mobile Navigation Toggle Line Color */
   -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1.000);
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1.000);
   -webkit-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
@@ -217,7 +217,7 @@ body
 
 .nav-menu 
 {
-  background-color: #000000; /* Mobile Navigation Menu Color */
+  background-color: #ffffff; /* Mobile Navigation Menu Color */
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -228,7 +228,7 @@ body
 
 .nav-menu .menu-item 
 { 
-  border-top: 1px solid #bbb; 
+  border-top: 1px solid #bbb; /* Mobile Navigation Menu Line Color */
   height: 100%; /* Mobile Navigation Menu Height */
 }
 
@@ -242,9 +242,9 @@ body
 /* Darker background color on hover, and when toggled */
 
 .nav-menu > .menu-item:hover,
-.nav-menu > .menu-item.is-active 
+.nav-menu > .menu-item:active
 { 
-  background-color: #d0d0d0; 
+  background-color: #d0d0d0; /* Mobile Navigation Menu Active Color */
 }
 
 /* 1. Menu links are block level, by default */
@@ -253,7 +253,7 @@ body
 {
   display: block; /* 1 */
   text-decoration: none;
-  color: #444;
+  color: #444; /* Mobile Navigation Menu Text Color */
   padding: 0.75rem 1rem;
 }
 
@@ -282,7 +282,7 @@ body
   right: 1rem;
   bottom: 0;
   content: "+"; /* 1 */
-  color: #222;
+  color: #222; /* Mobile Navigation Menu Dropdown Icon Color */
 }
 
 /* 1. Switch icon to n-dash when toggled */
@@ -300,7 +300,7 @@ body
 .nav-dropdown 
 {
   display: none; /* 1 */
-  background-color: #00ff00;
+  background-color: #ffffff; /* Mobile Navigation Menu Dropdown Color */
 }
 
 /* 1. Show dropdown when toggled */
@@ -334,7 +334,7 @@ body
   .nav 
   { 
     position: fixed;
-    background-color: #222222; /* Desktop Navigation Bar Color */
+    background-color: #ffffff; /* Desktop Navigation Bar Color */
     height: 50px; /* Desktop Navigation Bar Height */
   }
 
@@ -372,7 +372,7 @@ body
 
   .nav-menu 
   {
-    background-color: #222222; /* Desktop Navigation Menu Color */
+    background-color: #ffffff; /* Desktop Navigation Menu Color */
   }
 
   /* 1. Display menu items inline */
@@ -437,7 +437,7 @@ body
     top: 100%;
     width: 200px;
     margin: 0;
-    padding: 0.5rem 0;
+    padding: 0 0 0 0;
     background-color: #dedede;
     box-shadow: 0 0 4px hsla(0, 0%, 0%, 0.15);
     visibility: hidden;
