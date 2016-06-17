@@ -155,6 +155,8 @@ function initialize()
     updateTimerDisplay();
     updateProgressBar();
     stopVideo();
+    player.seekTo(2000, true);
+    // player.seekTo(0, true);
 
     // Clear any old interval.
     clearInterval(time_update_interval);
