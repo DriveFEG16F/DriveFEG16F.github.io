@@ -9,6 +9,8 @@ var fps = 25;
 var n = 23;
 var stopPoints = [];
 
+var t;
+
 var clicked = false;
 
 BLOCK.addEventListener('mousedown', this.onMouseDown, false);
@@ -155,7 +157,11 @@ function initialize()
     updateTimerDisplay();
     updateProgressBar();
     stopVideo();
-    player.seekTo(2000, true);
+    t = player.getCurrentTime();
+    player.seekTo(t, true);
+    t = t + ( 1 / fps );
+    
+    // player.seekTo(2000, true);
     // player.seekTo(0, true);
 
     // Clear any old interval.
