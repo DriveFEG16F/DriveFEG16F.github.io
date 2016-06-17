@@ -11,13 +11,22 @@
 	z-index: 1;
 	/*background-color: #ff0000;*/
 }
-.youtube, .block
+.block
 {
 	width: 800px;
 	height: 450px;
 	position:absolute;
 	top: 0;
 	left: 0;
+}
+.youtube, .block
+{
+	width: 800px;
+	height: 240px;
+	position:absolute;
+	top: 480;
+	left: 0;
+	background-color: 
 }
 #demo
 {
@@ -28,6 +37,6 @@
 .test
 {
 	position:absolute;
-	top: 560px;
+	top: 750px;
 	left: 0;
 }
