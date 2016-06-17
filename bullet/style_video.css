@@ -11,7 +11,7 @@
 	z-index: 1;
 	/*background-color: #ff0000;*/
 }
-.block
+.youtube
 {
 	width: 800px;
 	height: 450px;
@@ -19,7 +19,7 @@
 	top: 0;
 	left: 0;
 }
-.youtube, .block
+.block
 {
 	width: 800px;
 	height: 240px;
