@@ -1,4 +1,5 @@
 var BLOCK = document.getElementById("myBlock");
+BLOCK.style.display = "none";
 
 var videoDuration;
 var clipDuration;
@@ -141,7 +142,8 @@ function onYouTubeIframeAPIReady()
             },
             events: 
             {
-                'onReady': initialize
+                'onReady': initialize,
+                'onStateChange': onPlayerStateChange
             }
         }
     );
@@ -192,6 +194,16 @@ function initialize()
     BLOCK.addEventListener("touchmove", onTouchMove, false);
     BLOCK.addEventListener("touchend", onTouchEnd, false);
 
+}
+
+//Playing
+function onPlayerStateChange(event)
+{
+    if (event.data == YT.PlayerState.PLAYING)
+    {
+        document.getElementById("state").innerHTML = "State: " + "Playing";
+        BLOCK.style.display = "block";
+    }
 }
 
 //Stop
