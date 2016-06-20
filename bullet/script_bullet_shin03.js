@@ -119,7 +119,7 @@ function onTouchMove(event)
 
     console.log("Fram: " + frame);
 
-    // player.pauseVideo();
+    player.pauseVideo();
     player.seekTo(frame);
     startingPoint = event.changedTouches[0].clientX; 
 }
