@@ -1,0 +1,17 @@
+<html>
+<body style='margin:0px;padding:0px;'>
+	<script type='text/javascript' src='http://www.youtube.com/iframe_api'>
+	</script>
+	<script type='text/javascript'>
+		function onYouTubeIframeAPIReady()
+		{
+			ytplayer=new YT.Player('playerId',{events:{onReady:onPlayerReady}})
+		}
+		function onPlayerReady(a)
+		{
+			a.target.playVideo();
+		}
+	</script>
+	<iframe id='playerId' type='text/html' width='640' height='480' src='https://www.youtube.com/embed/8Yl_ghvgXFI?playsinline=1' frameborder='0'>
+</body>
+</html>
