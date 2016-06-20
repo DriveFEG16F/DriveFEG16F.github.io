@@ -92,7 +92,7 @@ function onMouseMove(event)
 
 function onTouchMove(event)
 {
-    event.preventDefault();
+    // event.preventDefault();
 
     moveX = event.changedTouches[0].clientX - startingPoint;
     document.getElementById("data").innerHTML = "MOVE:" + moveX;
