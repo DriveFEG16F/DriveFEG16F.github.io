@@ -82,9 +82,9 @@ function onMouseMove(event)
         }
 
         console.log("Fram: " + frame);
-
-        player.pauseVideo();
+       
         player.seekTo(frame);
+        player.pauseVideo();
 
         startingPoint = event.clientX;       
     }
@@ -119,8 +119,9 @@ function onTouchMove(event)
 
     console.log("Fram: " + frame);
 
-    player.pauseVideo();
     player.seekTo(frame);
+    player.pauseVideo();
+
     startingPoint = event.changedTouches[0].clientX; 
 }
 
