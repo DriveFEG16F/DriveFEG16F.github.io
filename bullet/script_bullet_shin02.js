@@ -1,5 +1,4 @@
 var BLOCK = document.getElementById("myBlock");
-BLOCK.style.display = "none";
 
 var videoDuration;
 var clipDuration;
@@ -19,8 +18,7 @@ function onMouseDown(event)
     startingPoint = event.clientX;
     console.log("Clicked");
     console.log("Position: " + startingPoint);
-    player.pauseVideo();
-    // player.playVideo();
+    player.playVideo();
     document.getElementById("data").innerHTML = "TOUCH: " + startingPoint;
 }
 
@@ -28,8 +26,7 @@ function onTouchStart(event)
 {
     event.preventDefault();
     startingPoint = event.touches[0].clientX;
-    player.pauseVideo();
-    // player.playVideo();
+    player.playVideo();
     console.log("Position: " + startingPoint);
     document.getElementById("data").innerHTML = "TOUCH: " + startingPoint;
 }
@@ -38,7 +35,6 @@ function onMouseUp(event)
 {
     clicked = false;
     startingPoint = null;
-    player.playVideo();
     console.log("Up");
     console.log("Position: " + startingPoint);
     console.log("Duration: " + videoDuration);
@@ -48,7 +44,6 @@ function onTouchEnd(event)
 {
     event.preventDefault();
     startingPoint = null;
-    player.playVideo();
     console.log("Up");
     console.log("Position: " + startingPoint);
     console.log("Duration: " + videoDuration);
@@ -82,9 +77,8 @@ function onMouseMove(event)
         }
 
         console.log("Fram: " + frame);
-       
+
         player.seekTo(frame);
-        player.pauseVideo();
 
         startingPoint = event.clientX;       
     }
@@ -92,7 +86,7 @@ function onMouseMove(event)
 
 function onTouchMove(event)
 {
-    // event.preventDefault();
+    event.preventDefault();
 
     moveX = event.changedTouches[0].clientX - startingPoint;
     document.getElementById("data").innerHTML = "MOVE:" + moveX;
@@ -120,8 +114,6 @@ function onTouchMove(event)
     console.log("Fram: " + frame);
 
     player.seekTo(frame);
-    player.pauseVideo();
-
     startingPoint = event.changedTouches[0].clientX; 
 }
 
@@ -134,8 +126,8 @@ function onYouTubeIframeAPIReady()
     (
         'video-placeholder', 
         {
-            width: 1280,
-            height: 720,
+            width: 800,
+            height: 450,
             videoId: '8Yl_ghvgXFI',
             playerVars: 
             {
@@ -145,8 +137,7 @@ function onYouTubeIframeAPIReady()
             },
             events: 
             {
-                'onReady': initialize,
-                'onStateChange': onPlayerStateChange
+                'onReady': initialize
             }
         }
     );
@@ -197,16 +188,6 @@ function initialize()
     BLOCK.addEventListener("touchmove", onTouchMove, false);
     BLOCK.addEventListener("touchend", onTouchEnd, false);
 
-}
-
-//Playing
-function onPlayerStateChange(event)
-{
-    if (event.data == YT.PlayerState.PLAYING)
-    {
-        document.getElementById("state").innerHTML = "State: " + "Playing";
-        BLOCK.style.display = "block";
-    }
 }
 
 //Stop
