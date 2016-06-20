@@ -22,11 +22,11 @@
 .block
 {
 	width: 800px;
-	height: 200px;
+	height: 450px;
 	position:absolute;
-	top: 480px;
+	top: 0px;
 	left: 0;
-	background-color: #ff0000;
+	/*background-color: #ff0000;*/
 }
 #demo
 {

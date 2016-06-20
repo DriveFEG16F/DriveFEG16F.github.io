@@ -19,6 +19,7 @@ function onMouseDown(event)
     startingPoint = event.clientX;
     console.log("Clicked");
     console.log("Position: " + startingPoint);
+    player.pauseVideo();
     // player.playVideo();
     document.getElementById("data").innerHTML = "TOUCH: " + startingPoint;
 }
@@ -27,6 +28,7 @@ function onTouchStart(event)
 {
     event.preventDefault();
     startingPoint = event.touches[0].clientX;
+    player.pauseVideo();
     // player.playVideo();
     console.log("Position: " + startingPoint);
     document.getElementById("data").innerHTML = "TOUCH: " + startingPoint;
@@ -117,7 +119,7 @@ function onTouchMove(event)
 
     console.log("Fram: " + frame);
 
-    player.pauseVideo();
+    // player.pauseVideo();
     player.seekTo(frame);
     startingPoint = event.changedTouches[0].clientX; 
 }
