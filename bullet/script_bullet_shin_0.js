@@ -9,8 +9,16 @@ var fps = 25;
 var n = 23;
 var stopPoints = [];
 
+var t;
 
 var clicked = false;
+
+BLOCK.addEventListener('mousedown', this.onMouseDown, false);
+BLOCK.addEventListener('mousemove', this.onMouseMove, false);
+BLOCK.addEventListener('mouseup', this.onMouseUp, false);
+BLOCK.addEventListener("touchstart", this.onTouchStart, false);
+BLOCK.addEventListener("touchmove", onTouchMove, false);
+BLOCK.addEventListener("touchend", onTouchEnd, false);
 
 function onMouseDown(event)
 {   
@@ -131,7 +139,6 @@ function onYouTubeIframeAPIReady()
             videoId: '8Yl_ghvgXFI',
             playerVars: 
             {
-                'playsinline': 1,
                 'autoplay': 0, 
                 'controls': 0
             },
@@ -150,6 +157,12 @@ function initialize()
     updateTimerDisplay();
     updateProgressBar();
     stopVideo();
+    t = player.getCurrentTime();
+    player.seekTo(t, true);
+    t = t + ( 1 / fps );
+    
+    // player.seekTo(2000, true);
+    // player.seekTo(0, true);
 
     // Clear any old interval.
     clearInterval(time_update_interval);
@@ -162,7 +175,7 @@ function initialize()
         {
             updateTimerDisplay();
             updateProgressBar();
-            stopVideo();
+            // stopVideo();
             document.getElementById("time").innerHTML = "Time: " + player.getCurrentTime();
         }, 1/fps
     );
@@ -179,14 +192,6 @@ function initialize()
     document.getElementById("clip").innerHTML = "Clip: " + clipDuration;
     document.getElementById("fps").innerHTML = "FPS: " + fps;
     document.getElementById("stop").innerHTML = "Stop Points: " + stopPoints + ", ";
-    
-
-    BLOCK.addEventListener('mousedown', this.onMouseDown, false);
-    BLOCK.addEventListener('mousemove', this.onMouseMove, false);
-    BLOCK.addEventListener('mouseup', this.onMouseUp, false);
-    BLOCK.addEventListener("touchstart", this.onTouchStart, false);
-    BLOCK.addEventListener("touchmove", onTouchMove, false);
-    BLOCK.addEventListener("touchend", onTouchEnd, false);
 
 }
 
