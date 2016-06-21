@@ -84,7 +84,7 @@ function onMouseMove(event)
         console.log("Fram: " + frame);
        
         player.seekTo(frame);
-        player.pauseVideo();
+        // player.pauseVideo();
 
         startingPoint = event.clientX;       
     }
@@ -120,7 +120,7 @@ function onTouchMove(event)
     console.log("Fram: " + frame);
 
     player.seekTo(frame);
-    player.pauseVideo();
+    // player.pauseVideo();
 
     startingPoint = event.changedTouches[0].clientX; 
 }
@@ -134,8 +134,8 @@ function onYouTubeIframeAPIReady()
     (
         'video-placeholder', 
         {
-            width: 1280,
-            height: 720,
+            // width: 1280,
+            // height: 720,
             videoId: '8Yl_ghvgXFI',
             playerVars: 
             {
