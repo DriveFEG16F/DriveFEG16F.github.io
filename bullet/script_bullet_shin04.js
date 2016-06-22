@@ -177,6 +177,7 @@ function initialize()
         {
             updateTimerDisplay();
             updateProgressBar();
+            onTouchMove;
             // stopVideo();
             document.getElementById("time").innerHTML = "Time: " + player.getCurrentTime();
         }, 1/fps
