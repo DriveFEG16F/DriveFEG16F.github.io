@@ -174,6 +174,7 @@ function initialize()
     updateTimerDisplay();
     updateProgressBar();
     stopVideo();
+    player.mute();
 
     // Clear any old interval.
     clearInterval(time_update_interval);
