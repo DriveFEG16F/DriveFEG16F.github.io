@@ -748,8 +748,8 @@ th
     }
     .box-abstract-button
     {
-        margin-top: 4%;
-        margin-bottom: 4%;
+        margin-top: 20%;
+        margin-bottom: 8%;
     }
     .box-video
     {
@@ -764,6 +764,7 @@ th
         font-size: 16px;
         margin-left: auto;
         margin-right: auto;
+        width: 80%;
     }
 
     .backg-frame
@@ -849,8 +850,8 @@ th
     }
     a.button:link, a.button:visited
     {
-        margin-top: 15%;
-        width: 80%;
+/*        margin-top: 15%;
+        width: 80%;*/
     }
     table
     {
