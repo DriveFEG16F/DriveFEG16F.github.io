@@ -202,8 +202,8 @@ function initialize()
     BLOCK.addEventListener('mousemove', this.onMouseMove, false);
     BLOCK.addEventListener('mouseup', this.onMouseUp, false);
     BLOCK.addEventListener("touchstart", this.onTouchStart, false);
-    BLOCK.addEventListener("touchmove", onTouchMove, false);
-    BLOCK.addEventListener("touchend", onTouchEnd, false);
+    BLOCK.addEventListener("touchmove", this.onTouchMove, false);
+    BLOCK.addEventListener("touchend", this.onTouchEnd, false);
 
 }
 
