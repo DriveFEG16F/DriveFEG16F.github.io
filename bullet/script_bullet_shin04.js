@@ -102,7 +102,7 @@ function onMouseMove(event)
 
 function onTouchMove(event)
 {
-    // event.preventDefault();
+    event.preventDefault();
     
 
     moveX = event.changedTouches[0].clientX - startingPoint;
@@ -157,7 +157,8 @@ function onYouTubeIframeAPIReady()
                 'playsinline': 1,
                 'autoplay': 0, 
                 'controls': 0,
-                'rel': 0
+                'rel': 0,
+                'showinfo': 0,
             },
             events: 
             {
