@@ -95,6 +95,7 @@ function onMouseMove(event)
 function onTouchMove(event)
 {
     // event.preventDefault();
+    player.playVideo();
 
     moveX = event.changedTouches[0].clientX - startingPoint;
     document.getElementById("data").innerHTML = "MOVE:" + moveX;
@@ -110,7 +111,7 @@ function onTouchMove(event)
     frame = player.getCurrentTime() + ( clipDuration * moveX ) + ( 1 / fps );
     document.getElementById("myframe").innerHTML = "FRAME:" + frame;
     document.getElementById("current").innerHTML = "CURRENT:" + player.getCurrentTime();
-    
+
     console.log("Time: " + player.getCurrentTime());
 
     if(frame <= 0)
