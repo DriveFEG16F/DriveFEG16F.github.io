@@ -84,8 +84,9 @@ function onMouseMove(event)
         }
 
         console.log("Fram: " + frame);
-       
-        player.seekTo(frame);
+
+        player.seekTo(frame, true);
+        // player.seekTo(frame);
         // player.pauseVideo();
 
         startingPoint = event.clientX;       
@@ -95,7 +96,7 @@ function onMouseMove(event)
 function onTouchMove(event)
 {
     // event.preventDefault();
-    player.playVideo();
+    
 
     moveX = event.changedTouches[0].clientX - startingPoint;
     document.getElementById("data").innerHTML = "MOVE:" + moveX;
@@ -125,7 +126,8 @@ function onTouchMove(event)
 
     console.log("Fram: " + frame);
 
-    player.seekTo(frame);
+    player.seekTo(frame, true);
+    // player.seekTo(frame);
     // player.pauseVideo();
 
     startingPoint = event.changedTouches[0].clientX; 
@@ -147,7 +149,8 @@ function onYouTubeIframeAPIReady()
             {
                 'playsinline': 1,
                 'autoplay': 0, 
-                'controls': 0
+                'controls': 0,
+                'rel': 0
             },
             events: 
             {
@@ -177,7 +180,6 @@ function initialize()
         {
             updateTimerDisplay();
             updateProgressBar();
-            onTouchMove;
             // stopVideo();
             document.getElementById("time").innerHTML = "Time: " + player.getCurrentTime();
         }, 1/fps
