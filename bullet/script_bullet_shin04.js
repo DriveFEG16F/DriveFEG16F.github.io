@@ -61,6 +61,7 @@ function onMouseMove(event)
         moveX = event.clientX - startingPoint;
         document.getElementById("data").innerHTML = "MOVE:" + moveX;
 
+
         if(moveX != 0)
         {
             moveX = moveX / Math.abs(moveX);    
@@ -69,6 +70,7 @@ function onMouseMove(event)
         console.log("moveX: " + moveX);
 
         frame = player.getCurrentTime() + ( clipDuration * moveX ) + ( 1 / fps );
+        document.getElementById("myframe").innerHTML = "FRAME:" + frame;
 
         console.log("Time: " + player.getCurrentTime());
 
@@ -97,6 +99,7 @@ function onTouchMove(event)
     moveX = event.changedTouches[0].clientX - startingPoint;
     document.getElementById("data").innerHTML = "MOVE:" + moveX;
 
+
     if(moveX != 0)
         {
             moveX = moveX / Math.abs(moveX);    
@@ -105,6 +108,7 @@ function onTouchMove(event)
     console.log("moveX: " + moveX);
 
     frame = player.getCurrentTime() + ( clipDuration * moveX ) + ( 1 / fps );
+    document.getElementById("myframe").innerHTML = "FRAME:" + frame;
 
     console.log("Time: " + player.getCurrentTime());
 
@@ -188,6 +192,7 @@ function initialize()
     document.getElementById("clip").innerHTML = "Clip: " + clipDuration;
     document.getElementById("fps").innerHTML = "FPS: " + fps;
     document.getElementById("stop").innerHTML = "Stop Points: " + stopPoints + ", ";
+
     
 
     BLOCK.addEventListener('mousedown', this.onMouseDown, false);
