@@ -110,8 +110,8 @@ function onTouchMove(event)
     console.log("moveX: " + moveX);
 
     frame = player.getCurrentTime() + ( clipDuration * moveX ) + ( 1 / fps );
-    document.getElementById("myframe").innerHTML = "FRAME:" + frame;
-    document.getElementById("current").innerHTML = "CURRENT:" + player.getCurrentTime();
+    document.getElementById("myframe").innerHTML = "FRAME: " + frame;
+    document.getElementById("current").innerHTML = "CURRENT: " + player.getCurrentTime();
 
     console.log("Time: " + player.getCurrentTime());
 
