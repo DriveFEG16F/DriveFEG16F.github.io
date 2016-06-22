@@ -60,7 +60,7 @@ function onMouseMove(event)
     {       
         moveX = event.clientX - startingPoint;
         document.getElementById("data").innerHTML = "MOVE:" + moveX;
-
+        document.getElementById("current").innerHTML = "CURRENT:" + player.getCurrentTime();
 
         if(moveX != 0)
         {
