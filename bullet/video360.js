@@ -173,8 +173,8 @@ function initialize()
     // Update the controls on load
     updateTimerDisplay();
     updateProgressBar();
-    stopVideo();
     player.mute();
+    // stopVideo();
 
     // Clear any old interval.
     clearInterval(time_update_interval);
@@ -187,6 +187,7 @@ function initialize()
         {
             updateTimerDisplay();
             updateProgressBar();
+            player.mute();
             // stopVideo();
             document.getElementById("time").innerHTML = "TIME: " + player.getCurrentTime();
         }, 1/fps
