@@ -28,8 +28,8 @@ function onTouchStart(event)
 {
     event.preventDefault();
     startingPoint = event.touches[0].clientX;
-    player.pauseVideo();
-    // player.playVideo();
+    // player.pauseVideo();
+    player.playVideo();
     console.log("Position: " + startingPoint);
     document.getElementById("data").innerHTML = "TOUCH: " + startingPoint;
 }
