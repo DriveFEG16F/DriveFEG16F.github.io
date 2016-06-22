@@ -1,6 +1,13 @@
 var BLOCK = document.getElementById("myBlock");
 BLOCK.style.display = "none";
 
+BLOCK.addEventListener('mousedown', this.onMouseDown, false);
+BLOCK.addEventListener('mousemove', this.onMouseMove, false);
+BLOCK.addEventListener('mouseup', this.onMouseUp, false);
+BLOCK.addEventListener("touchstart", this.onTouchStart, false);
+BLOCK.addEventListener("touchmove", this.onTouchMove, false);
+BLOCK.addEventListener("touchend", this.onTouchEnd, false);
+
 var videoDuration;
 var clipDuration;
 var startingPoint;
@@ -197,16 +204,6 @@ function initialize()
     document.getElementById("clip").innerHTML = "Clip: " + clipDuration;
     document.getElementById("fps").innerHTML = "FPS: " + fps;
     document.getElementById("stop").innerHTML = "Stop Points: " + stopPoints + ", ";
-
-    
-
-    BLOCK.addEventListener('mousedown', this.onMouseDown, false);
-    BLOCK.addEventListener('mousemove', this.onMouseMove, false);
-    BLOCK.addEventListener('mouseup', this.onMouseUp, false);
-    BLOCK.addEventListener("touchstart", this.onTouchStart, false);
-    BLOCK.addEventListener("touchmove", this.onTouchMove, false);
-    BLOCK.addEventListener("touchend", this.onTouchEnd, false);
-
 }
 
 //Playing
