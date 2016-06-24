@@ -23,6 +23,8 @@ var fps = 25;
 var n = 23;
 var clicked = false;
 var stopPoints = [];
+var loopPoints = [];
+var L = 0;
 
 function onMouseDown(event)
 {   
@@ -180,16 +182,19 @@ function initialize()
 
     // Start interval to update elapsed time display and
     // the elapsed part of the progress bar every second.
-    time_update_interval = setInterval
-    (
-        function () 
-        {
-            updateTimerDisplay();
-            updateProgressBar();
-            // stopVideo();
-            // document.getElementById("time").innerHTML = "TIME: " + player.getCurrentTime();
-        }, 1/fps
-    );
+    // The setInterval() method repeats a given function at every given time-interval.
+    // time_update_interval = setInterval
+    // (
+    //     function () 
+    //     {
+    //         updateTimerDisplay();
+    //         updateProgressBar();
+    //         loopVideo();
+    //         document.getElementById("time").innerHTML = "TIME: " + player.getCurrentTime();
+    //     }, 1/fps
+    // );
+    
+    time_update_interval = setInterval(loopVideo, 0.1);
 
     // GetDuration must be called from onYouTubePlayerReady
     videoDuration = player.getDuration();
@@ -198,11 +203,16 @@ function initialize()
     for (var i = 0; i < n; i++) {
         stopPoints[i] = clipDuration * (i+1);
     }
+
+    for (var i = 0; i < n; i++) {
+        loopPoints[i] = clipDuration * i;
+    }
     
     // document.getElementById("duration").innerHTML = "DURATION: " + videoDuration;
     // document.getElementById("clip").innerHTML = "CLIP: " + clipDuration;
     // document.getElementById("fps").innerHTML = "FPS: " + fps;
     // document.getElementById("stoppoints").innerHTML = "STOPPOINTS: " + stopPoints;
+    // document.getElementById("looppoints").innerHTML = "LOOPPOINTS: " + loopPoints;
 }
 
 //Playing
@@ -234,6 +244,19 @@ function stopVideo()
     }
 }
 
+function loopVideo()
+{
+    for (var i = 0; i < n; i++) 
+    {
+        if(player.getCurrentTime() > (stopPoints[i] - (10/fps)) && player.getCurrentTime() < (stopPoints[i] + (10/fps)))
+        {
+            L = i;
+            // document.getElementById("loop").innerHTML = "LOOP: " + i + " / loopPOINTS: " + loopPoints[i] + " / stopPOINTS: " + stopPoints[i];
+            break;
+        }
+        // document.getElementById("state").innerHTML = "State: " + "Found " + L;
+    }
+}
 
 // This function is called by initialize()
 function updateTimerDisplay()
