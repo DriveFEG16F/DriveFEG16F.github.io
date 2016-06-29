@@ -1,0 +1,34 @@
+.video-container 
+{
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0; 
+    overflow: hidden;
+	background-color: #000000;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.block
+{
+	z-index: 1;
+    cursor: pointer;
+    cursor: hand;
+	/*background-color: #ff0000;*/
+}
+.youtube, .block
+{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;;
+}
