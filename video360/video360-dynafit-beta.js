@@ -29,7 +29,7 @@ var playing = false;
 var a = 0;
 var angle = [000, 015, 030, 045, 060, 075, 090, 105, 120, 135, 150, 165, 180, 195, 210, 225, 240, 255, 270, 285, 300, 315, 330, 345];
 
-// var youtubeID;
+var youtubeID;
 
 var player, time_update_interval = 0;
 
