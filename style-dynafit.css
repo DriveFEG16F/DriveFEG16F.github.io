@@ -96,15 +96,24 @@ a
 {  
     background-attachment:fixed;
 }
-.backg-index
+.backg-main
 {
     margin-top: 3em;
-    padding-top: 50%;
-    /*padding-top: 56.25%;*/ /* 16:9 */
 }
-.backg-subpage
+.backg-167
 {
-    margin-top: 3em;
+    padding-top: 43.75%; /* 16:7 */
+}
+.backg-168
+{
+    padding-top: 50%; /* 16:8 */
+}
+.backg-169
+{
+    padding-top: 56.25%; /* 16:9 */
+}
+.backg-section
+{
     padding-top: 43.75%; /* 16:7 */
 }
 
@@ -113,13 +122,17 @@ a
 {
     background-image: url("images/index-main.jpg");
 }
+.keyvisual-index-fermi
+{
+    background-image: url("images/index-fermi.jpg");
+}
+.keyvisual-fermi
+{
+    background-image: url("images/fermi-main.jpg");
+}
 .keyvisual-fermi-phone
 {
     background-image: url("images/fermi-phone.jpg");
-}
-.keyvisual-fermi-main01
-{
-    background-image: url("images/fermi-main02.jpg");
 }
 .keyvisual-fermi-man
 {
@@ -134,6 +147,10 @@ a
     background-image: url("images/marathon.jpg");
     cursor: pointer;
     cursor: hand;
+}
+.keyvisual-training
+{
+    background-image: url("images/training-main.jpg");
 }
 .keyvisual-injury
 {

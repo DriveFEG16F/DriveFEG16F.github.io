@@ -19,14 +19,19 @@
     }
 
     /* BACKGROUND */
-    .backg-index
+    .backg-main
+    {
+
+    }
+    .backg-167,
+    .backg-168,
+    .backg-169
     {
         padding-top: 180%; /* 10:18 */
     }
-    .backg-subpage
+    .backg-section
     {
-        padding-top: 180%;
-        /*padding-top: 100%;*/ /* 1:1 */
+       padding-top: 100%; 
     }
     .backg-video
     {
@@ -37,6 +42,14 @@
     .keyvisual-index
     {
         background-image: url("images/index-main-m.jpg");
+    }
+    .keyvisual-index-fermi
+    {
+        background-image: url("images/index-fermi-m.jpg");
+    }
+    .keyvisual-fermi
+    {
+        background-image: url("images/fermi-main-m.jpg");
     }
     .keyvisual-fermi-phone
     {
@@ -55,6 +68,10 @@
         background-image: url("images/marathon-m.jpg");
         cursor: pointer;
         cursor: hand;
+    }
+    .keyvisual-training
+    {
+        background-image: url("images/training-main-m.jpg");
     }
     .keyvisual-injury
     {
@@ -118,59 +135,7 @@
         width: 80%;
     }
 
-    .backg-frame
-    {
-        background-color: #ffffff;
-    }
-    .backg
-    {   
-        background-attachment:scroll;
-    }
-    .backg-main
-    {
-        background-image: url("images/main_01_m.jpg");
-        padding-top: 180%; /* 10:18 */
-    }
 
-    .backg-main-xl
-    {
-        background-image: url("images/main_01_m_xl.jpg");
-        padding-top: 180%; /* 1:2 */
-    }
-    .backg-man
-    {
-        background-image: url("images/man_01_m.jpg");
-        padding-top: 100%; /* 1:1 */
-    }
-    .backg-woman
-    {
-        background-image: url("images/woman_01_m.jpg");
-        padding-top: 100%; /* 1:1 */
-    }
-    .backg-tech
-    {
-        background-image: url("images/man_02_m.jpg");
-        padding-top: 100%; /* 16:7 */
-    }
-    .backg-marathon
-    {
-        background-image: url("images/marathon_m.jpg");
-        padding-top: 100%; /* 16:7 */
-    }
-    .backg-img
-    {
-        margin-top: 15%;
-        padding-right: 10%;
-        padding-left: 10%;
-    }
-    .backg-section
-    {
-        margin-top: 15%;
-        margin-bottom: 21%;
-        padding-right: 3%; 
-        padding-left: 3%;
-        /*width: 90%;*/
-    }
     .float-left
     {
         float: right;

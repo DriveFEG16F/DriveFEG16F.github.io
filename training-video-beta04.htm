@@ -2,7 +2,7 @@
 <html lang="zh-TW">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Injury Prevention</title>
+    <title>FERMI 1.0</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -14,7 +14,10 @@
     <link rel="stylesheet" href="style-dynafit-landscape.css" type="text/css">
 
     <!-- Navigation -->
-    <link rel="stylesheet" href="navigation/navigation.css" type="text/css">
+    <link rel="stylesheet" href="navigation/navigation-beta.css" type="text/css">
+
+    <!-- Video -->
+    <link rel="stylesheet" href="video360/video360-dynafit-beta.css" type="text/css">
 
     <link href='http://fonts.googleapis.com/css?family=Poppins:400,600,700,500,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,400italic,500,500italic,300,100italic,100,300italic' rel='stylesheet' type='text/css'>
@@ -32,7 +35,7 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+ 
   </head>
 
   <body>
@@ -54,10 +57,10 @@
           </div>
           <div class="nav-container">
             <ul class="nav-menu menu">
-              <li class="menu-item"><a href="fermi10.htm" class="menu-link">裝備</a></li>
-              <li class="menu-item"><a href="training.htm" class="menu-link">訓練</a></li>
-              <li class="menu-item"> <a href="injury.htm" class="menu-link">防護</a></li>
-              <li class="menu-item"> <a href="meal.htm" class="menu-link">飲食</a> </li>
+              <li class="menu-item"><a href="" class="menu-link">裝備</a></li>
+              <li class="menu-item"><a href="" class="menu-link">訓練</a></li>
+              <li class="menu-item"> <a href="" class="menu-link">防護</a></li>
+              <li class="menu-item"> <a href="" class="menu-link">飲食</a> </li>
               <!-- <li class="menu-item has-dropdown"> <a href="#!" class="menu-link">飲食</a>
                 <ul class="nav-dropdown menu">
                   <li class="menu-item"><a href="#!" class="menu-link">營養規劃</a></li>
@@ -70,76 +73,58 @@
       </div> <!-- row -->
     </nav>
 
-    <!-- MAIN -->
-    <div class="container-fluid main" id="home">
-      <div class="row">
-        <div class="col-md-12 backg backg-main backg-167 keyvisual-injury">
-        </div> 
-      </div> <!-- row -->
-    </div> <!-- container-fluid -->
-
     <div class="container-fluid main">
       <div class="row">
         <div class="col-md-12 box">
 
-          <div class="box-row-subpage centering-H">
-            <div class="col-md-5 col-sm-12 col-xs-12 box-column">
-              <img src="images/meal-salmonsourbuttercake.jpg" class="img-responsive" alt="">
-            </div>
-            <div class="col-md-7 col-sm-12 col-xs-12 box-abstract">
-                <h2>燻鮭魚酸奶油煎餅</h2>
-                <p>
-                  早餐除了蛋餅、吐司之外還能怎麼吃？燻鮭魚酸奶油煎餅，教你這道充滿異國風味料理，早餐也能有不同吃法！
-                </p>
-                <!-- Button -->
-                <div class="col-md-12 col-sm-12 col-xs-12 box box-abstract-button">
-                  <a class="button" target="_blank" href="https://www.fe-amart.com.tw/index.php/life-style/taste-food/life-seafood/salmonsourbuttercake">
-                    學料理
-                  </a> 
+          <div class="box-row-video centering-H">
+            <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 box">
+              <div class="box centering-H">
+                <div class="video-container">                  
+                  <div class="block" id="myBlock"></div>
+                  <div class="youtube" id="video-placeholder"></div>
                 </div>
+                <div class="stop-icon" id="stop"></div>
+                <div class="info-icon" id="info">
+                  <p id="angle">
+                    000
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 box-abstract">
+                <h2>正面棒式</h2>
+                <p>
+                  這個棒式核心訓練動作不只訓練到核心肌群，連肩膀、胸部、背部、腿部的肌肉都有參與到，是個相當全面性的動作，加強後的部位不易有脂肪的堆積。初學者可以先從做30秒、休息30秒開始，一天三次，之後逐漸增加棒式核心訓練時間。
+                </p>
             </div>
           </div>
 
-          <div class="box-row-subpage centering-H">
-            <div class="col-md-5 col-sm-12 col-xs-12 box-column">
-              <img src="images/meal-egg.jpg" class="img-responsive" alt="">
-            </div>
-            <div class="col-md-7 col-sm-12 col-xs-12 box-abstract">
-                <h2>雲朵陽光蛋</h2>
-                <p>
-                  早安，晨之美！雞蛋料理新吃法!雲朵陽光蛋，網友瘋傳的雞蛋新奇吃法，讓你好心情一整天。
-                </p>
-                <!-- Button -->
-                <div class="col-md-12 col-sm-12 col-xs-12 box box-abstract-button">
-                  <a class="button" target="_blank" href="https://www.fe-amart.com.tw/index.php/life-style/taste-food/life-egg/cloudegg">
-                    學料理
-                  </a> 
-                </div>
-            </div>
           </div>
+      </div>
+    </div>
 
-          <div class="box-row-subpage centering-H">
-            <div class="col-md-5 col-sm-12 col-xs-12 box-column">
-              <img src="images/meal-orangecake.jpg" class="img-responsive" alt="">
-            </div>
-            <div class="col-md-7 col-sm-12 col-xs-12 box-abstract">
-                <h2>橙皮鬆餅</h2>
-                <p>
-                  散發濃濃柑橘味的橙皮鬆餅，和一般的口感不太一樣。簡單做不失敗！
-                </p>
-                <!-- Button -->
-                <div class="col-md-12 col-sm-12 col-xs-12 box">
-                  <a class="button" target="_blank" href="https://www.fe-amart.com.tw/index.php/life-style/taste-food/life-fruit/orangecake">
-                    學料理
-                  </a> 
-                </div>
-            </div>
+    <!-- DEBUG -->
+    <div class="container-fluid main">
+      <div class="row">
+        <div class="col-md-12 content-section">
+          <div class="text-box">
+            <p id="nhiGBAF5Hoc" onclick="getID(this);">Youtube</p>
+            <p id="stoppoints" style="word-wrap: break-word;">StopPoints</p>
+            <p id="looppoints" style="word-wrap: break-word;">LoopPoints</p>
+            <p id="loop" style="word-wrap: break-word;">Loop</p>
+            <p id="state">stop</p>
+            <p id="time">Time</p>
+            <p id="touch">Touch</p>
+            <p id="move">Move</p>
+            <p id="frame">Frame</p>
+            <p id="duration">Duration</p>
+            <p id="clip">Clip</p>
+            <p id="fps">fps</p>
           </div>
-
-        </div> 
-      </div> <!-- row -->
-    </div> <!-- container-fluid -->
-
+        </div>              
+      </div> 
+    </div>
 
     <div class="container-fluid main">
       <div class="row">
@@ -151,8 +136,6 @@
       </div> <!-- row -->
     </div> <!-- container-fluid -->
 
-
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -163,7 +146,14 @@
 
     <!-- jQuery (necessary for Navigation) -->
     <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="js/navigation.js"></script>
+    <script src="navigation/navigation.js"></script>
+
+    <!-- video -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="video360/video360-dynafit-beta.js"></script>
+    <script type="text/javascript">
+      youtubeID = 'CYqNju5GAjs';
+    </script>
 
     <script type="text/javascript">
       jQuery(function ($) 
