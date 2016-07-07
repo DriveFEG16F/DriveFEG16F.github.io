@@ -3,6 +3,7 @@
 <head>
  <meta charset="utf-8"/>
  <title>JavaScript - Using a timer to change an image</title>
+ <link rel="stylesheet" type="text/css" href="video360.css">
  <script type="text/javascript">
  
  /* In the previous tutorial, we changed an image by clicking on it.
@@ -11,18 +12,18 @@
  It uses much of the existing code from the previous tutorial.
  */
  
-var i = 0;
+// var i = 0;
 
- function change()
- {
+//  function change()
+//  {
 
-	 var image = document.getElementById('circle');
-	 i++;
-	 var num = i.toString();
+// 	 var image = document.getElementById('circle');
+// 	 i++;
+// 	 var num = i.toString();
 
-	image.src = 'img/shin (' + num +').jpg';
+// 	image.src = 'img/shin (' + num +').jpg';
 
- }
+//  }
  
  // Either the setTimeout() method or the setInterval() method can be used.
  // With the setTimeout() method, it takes two parameters.
@@ -30,20 +31,24 @@ var i = 0;
  // the setTimeout() method only runs once. To repeat, we use the setInterval() method instead.
  // It also uses two parameters, the code to run (or function to use), and the timer interval.
  
- var timer = setInterval('change();',67); 
+ // var timer = setInterval('change();',67); 
  
  // this function is called when the onclick event runs. It stops the timer running.
- function stop(){
- clearInterval(timer); //the clearInterval method stops the timer from running
- }
+ // function stop(){
+ // clearInterval(timer); //the clearInterval method stops the timer from running
+ // }
  
  </script>
  
 </head>
 <body>
- 
-<img src="img/shine360xs0.jpg" alt="Circle" id="circle" onclick="stop();">
- 
- 
+
+	<div class="block" id="myBlock"></div>
+	<div class="youtube">
+		<img src='img/shin (1).jpg' alt="" id="imageHolder">	
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="img360.js"></script>
 </body>
 </html>
