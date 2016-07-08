@@ -15,16 +15,36 @@ BLOCK.addEventListener("touchend", onTouchEnd, false);
 
 var clicked = false;
 var startingPoint;
+var m;
 var image = document.getElementById('imageHolder');
 var num;
 
+var imageArray = [];
+var image360 = [];
+
+for (var i = 1; i <=23; i++) 
+{
+    m = i.toString();
+    imageArray[i] = 'img/shin (' + m +').jpg';
+    console.log("IMGARRAY: " + imageArray[i]);
+};
+
+for (var i = 0; i <23; i++) 
+{
+    image360[i] = new Image();
+    image360[i].src = imageArray[i+1];
+    console.log("IMG: " + image360[i].src);
+};
+
+
 var j = 1;
+
 
 function onMouseDown(event)
 {   
     clicked = true;
     startingPoint = event.clientX;
-    console.log("SRC: " + image.src)
+    console.log("SRC: " + image.src);
 }
 
 function onTouchStart(event)
@@ -76,7 +96,8 @@ function onMouseMove(event)
 
         num = j.toString();
 
-        image.src = 'img/shin (' + num +').jpg';
+        image.src = image360[j-1].src;
+        // image.src = 'img/shin (' + num +').jpg';
 
         startingPoint = event.clientX;       
     }
