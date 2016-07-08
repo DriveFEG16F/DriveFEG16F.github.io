@@ -264,7 +264,6 @@ function rotateMouseDown(event)
 {   
     started = true;
     startingPoint = event.clientX;
-    player.playVideo();
     console.log("Start");
     console.log("Position: " + startingPoint);
 }
@@ -273,7 +272,6 @@ function rotateTouchStart(event)
 {
     event.preventDefault();
     startingPoint = event.touches[0].clientX;
-    player.playVideo();
 }
 
 function rotateMouseUp(event)
