@@ -1,0 +1,28 @@
+
+.imgTouchpad
+{
+    z-index: 2;
+    cursor: pointer;
+    cursor: hand;
+    /*background-color: rgba(255, 0, 0, 0.3);*/
+}
+.img, .imgTouchpad
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 */
+    background-size: cover;
+    background-position: center bottom;
+}
+
+@media only screen 
+  and (max-device-width: 1024px)
+  and (orientation: portrait) 
+{
+    .img, .imgTouchpad
+    {
+        padding-top: 100%;
+    }   
+}

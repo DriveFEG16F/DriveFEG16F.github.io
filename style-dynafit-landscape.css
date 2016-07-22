@@ -1,0 +1,70 @@
+/* Landscape */
+@media only screen 
+  and (max-device-width: 1024px)
+  and (orientation: landscape) 
+{
+  /* FONT */
+  h2
+  {
+    font-size: 32px;  
+  }
+  p
+  {
+      font-size: 16px;
+  }
+
+  /* LOGO */
+  .logo
+  { 
+      width: 12%;
+  }
+
+  /* BOX */
+  .box-row-video
+  {
+      width: 96%;
+      background-color: #ff0000;
+  }
+  .box-row-video
+  {
+      margin-top: 60px;
+      margin-bottom: 4%;
+      background-color: #ffffff;
+      padding-top: 2%;
+  }
+}
+
+/* Size Landscape */
+@media only screen 
+  and (min-device-width: 0px) 
+  and (max-device-width: 800px)
+  and (orientation: landscape) 
+{
+  .logo
+  { 
+      width: 16%;
+  }
+}
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 960px)
+  and (orientation: landscape) 
+{
+
+}
+
+@media only screen 
+  and (min-device-width: 480px) 
+  and (max-device-width: 768px)
+  and (orientation: landscape) 
+{
+
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (orientation: landscape) 
+{
+
+}
