@@ -1,0 +1,193 @@
+/* PC */
+@media (min-width: 1281px) and (max-width: 1366px)
+{
+  h2
+  {
+    font-size: 36px;  
+  }
+  p
+  {
+      font-size: 18px;
+  }
+  .logo
+  {
+      width: 10%;
+  }
+
+  .box-row-subpage
+  {
+      width: 70%;
+  }
+
+  /* 
+   BOX 
+   SUBPAGE 2ND
+  */
+
+  .box-row-subpage-2nd
+  {
+    width: 60%;
+  }
+
+  .box-row-video
+  {
+    margin-top: 6%;
+  }
+  .box-row-video .box-abstract
+  {
+      padding: 20px 20px 20px 40px;
+  }
+  .box-row-video h2
+  {
+      font-size: 28px;
+      font-weight: 400;
+  }
+  .box-row-video p
+  {
+      font-size: 18px;
+      font-weight: 200;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1280px)
+{
+  h2
+  {
+    font-size: 32px;  
+  }
+  p
+  {
+      font-size: 16px;
+  }
+  .logo
+  {
+      width: 10%;
+  }
+
+  /* BOX */
+  .box-row-subpage
+  {
+      width: 70%;
+  }
+
+  /* 
+   BOX 
+   SUBPAGE 2ND
+  */
+
+  .box-row-subpage-2nd
+  {
+    width: 60%;
+  }
+
+  /* 
+   BOX 
+   VIDEO
+  */
+  .box-row-video
+  {
+      width: 80%;
+      margin-top: 8%;
+      margin-bottom: 4%;
+      background-color: #ffffff;
+  }
+  .box-row-video .box-abstract
+  {
+      padding: 20px 20px 20px 20px;
+  }
+  .box-row-video h2, 
+  .box-row-video p
+  {
+      color: #000000;
+  }
+  .box-row-video h2
+  {
+      font-size: 28px;
+      font-weight: 500;
+  }
+  .box-row-video p
+  {
+      font-size: 18px;
+      font-weight: 300;
+  }
+}
+@media (min-width: 961px) and (max-width: 1024px)
+{
+  .logo
+  {
+      width: 12%;
+  }
+
+  .box-row-video
+  {
+    width: 96%;
+  }
+  .box-row-video
+  {
+    margin-top: 60px;
+    margin-bottom: 4%;
+    background-color: #ffffff;
+    padding-top: 2%;
+  }
+  .box-row-video h2, 
+  .box-row-video p
+  {
+      color: #000000;
+  }
+  .box-row-video h2
+  {
+      font-size: 28px;
+      font-weight: 500;
+  }
+  .box-row-video p
+  {
+      font-size: 18px;
+      font-weight: 300;
+  }
+}
+@media (min-width: 0px) and (max-width: 960px)
+{
+  .logo
+  {
+      width: 14%;
+  }
+
+  .box-row-video
+  {
+    width: 96%;
+  }
+  .box-row-video
+  {
+    margin-top: 60px;
+    margin-bottom: 4%;
+    background-color: #ffffff;
+    padding-top: 2%;
+  }
+  .box-row-video h2, 
+  .box-row-video p
+  {
+      color: #000000;
+  }
+  .box-row-video h2
+  {
+      font-size: 28px;
+      font-weight: 500;
+  }
+  .box-row-video p
+  {
+      font-size: 18px;
+      font-weight: 300;
+  }
+}
+
+/*
+960x540
+1024x576
+1280x720
+1366x768
+1600x900
+1920x1080
+2048x1152
+2400x1350
+2560x1440
+2880x1620
+*/

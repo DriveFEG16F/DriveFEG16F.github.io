@@ -1,0 +1,136 @@
+/* Landscape */
+@media only screen 
+  and (max-device-width: 1024px)
+  and (orientation: landscape) 
+{
+  /* FONT */
+  h2
+  {
+    font-size: 32px;  
+  }
+  p
+  {
+      font-size: 16px;
+  }
+
+  /* LOGO */
+  .logo
+  { 
+      width: 12%;
+  }
+
+  /* BOX */
+
+  /* 
+     BOX 
+     SUBPAGE 2ND
+  */
+  .box-row-subpage-2nd
+  {
+      width: 80%;
+  } 
+  #introduction
+  {
+     margin-top: 7em; 
+  }
+  /* 
+     BOX 
+     VIDEO
+  */
+  .box-row-video
+  {
+      width: 96%;
+      background-color: #ff0000;
+  }
+  .box-row-video
+  {
+      margin-top: 60px;
+      margin-bottom: 4%;
+      background-color: #ffffff;
+      padding-top: 2%;
+  }
+}
+
+/* Size Landscape */
+@media only screen 
+  and (min-device-width: 0px) 
+  and (max-device-width: 800px)
+  and (orientation: landscape) 
+{
+  .logo
+  { 
+      width: 16%;
+  }
+
+  /* BOX */
+  .box-column .box-abstract,
+  {
+      padding-bottom: 8%;
+  }
+
+  /* 
+     BOX 
+     SUBPAGE 2ND
+  */
+  .box-row-subpage-2nd
+  {
+      width: 80%;
+  }
+  #introduction
+  {
+     margin-top: 0em;
+     padding-top: 7em;
+  }
+  #video360
+  {
+      padding-bottom: 16%;
+  }
+  #more-training
+  {
+      text-align: center;
+  }
+  .box-row-subpage-2nd > #title360,
+  .box-row-subpage-2nd > #titleMore
+  {
+      margin-top: 8%;
+  }
+  .box-row-subpage-2nd > .box-section
+  {
+    background-color: transparent;
+  }
+  .box-row-subpage-2nd > .box-section > .box-abstract
+  {
+    padding: 4% 4% 4% 4%;
+  }
+  .box-row-subpage-2nd > .box-section:last-child > #first, 
+  .box-row-subpage-2nd > .box-section:last-child > #left,
+  .box-row-subpage-2nd > .box-section:last-child > #right,
+  .box-row-subpage-2nd > .box-section:last-child > #last 
+  {
+      padding: 8% 8% 0 8%;
+  }
+
+}
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 960px)
+  and (orientation: landscape) 
+{
+
+}
+
+@media only screen 
+  and (min-device-width: 480px) 
+  and (max-device-width: 768px)
+  and (orientation: landscape) 
+{
+
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (orientation: landscape) 
+{
+
+}
