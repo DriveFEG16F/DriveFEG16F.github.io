@@ -61,7 +61,7 @@ h4
     font-weight: 500;
     letter-spacing: 0.02em;
     /*word-spacing: 0.2em;*/
-    line-height: 132%;
+    line-height: 1.5em;
     padding: 0 0 0 0; /* T R B L */
     margin: 0 0 2% 0; /* T R B L */
 }
@@ -92,7 +92,11 @@ a
     font-weight: 300;
     font-size: 20px;
     color: #000000;
-    text-decoration: none !important;
+    text-decoration: none;
+}
+a:hover
+{
+    text-decoration: none;
 }
 
 .logo
@@ -256,7 +260,25 @@ a
     border-bottom: none;
     margin-bottom: 8%;
 }
-
+.box-content
+{
+    margin: 0 0 0 0;
+    padding: 0 4% 0 4%;
+}
+.box-content .box-abstract
+{
+    padding: 0 0 0 4%;
+}
+#prologue a,
+.box-content a
+{
+    color: rgb(0, 128, 224);
+}
+#prologue a:hover,
+.box-content a:hover
+{
+    text-decoration: underline;
+}
 /* 
    BOX 
    SUBPAGE 2ND

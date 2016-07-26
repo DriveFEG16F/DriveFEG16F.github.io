@@ -3,39 +3,12 @@
   and (max-device-width: 1024px)
   and (orientation: portrait) 
 {
-    /* FONT */
-    h2
-    {
-        font-size: 28px;  
-    }
-    h4
-    {
-        font-size: 24px;
-    }
-    h6
-    {
-        font-size: 20px;
-    }
-    p
-    {
-        font-size: 16px;
-    }
 
-    .logo
-    {
-        width: 36%;
-    }
 
     /* BACKGROUND */
     .backg-main
     {
-        margin-bottom: 16%;
-    }
-    .backg-167,
-    .backg-168,
-    .backg-169
-    {
-        padding-top: 180%; /* 10:18 */
+        margin-bottom: 4%;
     }
     .backg-section
     {
@@ -91,10 +64,16 @@
     }
 
 
-    /* BOX */
-    .box-column
+    /* 
+       BOX 
+    */
+    .box-column,
+    .box-content .box-abstract 
     {
         padding: 0 0 0 0;
+    }
+    .box-column
+    {
         margin-bottom: 8%;
     }
     .box-row,
@@ -105,9 +84,11 @@
     }
     .box-abstract,
     .box-column .box-abstract,
+    .box-row-subpage > #prologue,
     .box-row-video .box-abstract,
     .box-text,
-    .box-row-subpage-2nd > #title, #more,
+    .box-row-subpage-2nd > #title, 
+    .box-row-subpage-2nd > #more,
     #title360, #titleMore
     {
         padding: 4% 4% 4% 4%;
@@ -241,15 +222,65 @@
   and (max-device-height: 1024px)
   and (orientation: portrait) 
 {
+  /* FONT */
+  h2
+  {
+    font-size: 32px;  
+  }
+  p, a
+  {
+      font-size: 20px;
+  }
+
+  /* LOGO */
+  .logo
+  { 
+      width: 20%;
+  }
+
+    .backg-167,
+    .backg-168,
+    .backg-169
+    {
+        padding-top: 100%; /* 10:18 */
+    }
 
 }
 
 @media only screen 
-  and (min-device-height: 769px)
+  /*and (min-device-height: 769px)*/
   and (max-device-height: 960px)
   and (orientation: portrait) 
 {
+    /* FONT */
+    h2
+    {
+        font-size: 28px;  
+    }
+    h4
+    {
+        font-size: 24px;
+    }
+    h6
+    {
+        font-size: 20px;
+    }
+    p, a
+    {
+        font-size: 16px;
+    }
 
+    .logo
+    {
+        width: 36%;
+    }
+
+    .backg-167,
+    .backg-168,
+    .backg-169
+    {
+        padding-top: 180%; /* 10:18 */
+    }
 }
 
 @media only screen 
