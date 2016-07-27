@@ -164,9 +164,9 @@ a:hover
 {
     background-image: url("images/fermi-main.jpg");
 }
-.keyvisual-fermi-phone
+.keyvisual-fermi-run
 {
-    background-image: url("images/fermi-phone.jpg");
+    background-image: url("images/fermi-run.jpg");
 }
 .keyvisual-fermi-man
 {
@@ -230,10 +230,14 @@ a:hover
 {
     padding: 0 12px 0 12px;
 }
-.box-column .box-abstract a:hover h2,
-.box-column .box-abstract a:hover p
+#index a:hover h2,
+#index a:hover p
 {
     color: #666666;
+}
+#index p span
+{
+    font-weight: 500;
 }
 .box .button
 {
@@ -408,7 +412,31 @@ a:hover
     padding: 0;
     margin: 0;
 }
+/*
+  FERMI
+*/
+#Heart
+{
+    float: left;
+}
+#icon-heart
+{
+    float: right;
+    padding: 0 8% 0 8%;
+    max-width: 500px;
+}
 
+#VIP p span
+{
+    font-weight: 500;
+}
+#TEL span
+{
+    color: rgb(0, 128, 224);
+}
+/*
+  FOOTER
+*/
 .box-footer
 {
     /*position: absolute;*/

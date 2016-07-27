@@ -3,7 +3,35 @@
   and (max-device-width: 1024px)
   and (orientation: portrait) 
 {
+    /* FONT */
+    h2
+    {
+        font-size: 28px;  
+    }
+    h4
+    {
+        font-size: 24px;
+    }
+    h6
+    {
+        font-size: 20px;
+    }
+    p, a
+    {
+        font-size: 16px;
+    }
 
+    .logo
+    {
+        width: 36%;
+    }
+
+    .backg-167,
+    .backg-168,
+    .backg-169
+    {
+        padding-top: 140%; /* 10:18 */
+    }
 
     /* BACKGROUND */
     .backg-main
@@ -32,9 +60,9 @@
     {
         background-image: url("images/fermi-main-m.jpg");
     }
-    .keyvisual-fermi-phone
+    .keyvisual-fermi-run
     {
-        background-image: url("images/fermi-phone-m.jpg");
+        background-image: url("images/fermi-run-m.jpg");
     }
     .keyvisual-fermi-man
     {
@@ -142,6 +170,21 @@
     {
         padding: 0 10% 0 10%;
     }
+    /*
+      FERMI
+    */
+    #Heart
+    {
+        margin-bottom: 0;
+    }
+    #Coach
+    {
+        clear: left;
+    }
+    #icon-heart
+    {
+        
+    }
 
 
     /* 
@@ -222,28 +265,6 @@
   and (max-device-height: 1024px)
   and (orientation: portrait) 
 {
-  /* FONT */
-  h2
-  {
-    font-size: 32px;  
-  }
-  p, a
-  {
-      font-size: 20px;
-  }
-
-  /* LOGO */
-  .logo
-  { 
-      width: 20%;
-  }
-
-    .backg-167,
-    .backg-168,
-    .backg-169
-    {
-        padding-top: 100%; /* 10:18 */
-    }
 
 }
 
@@ -252,35 +273,7 @@
   and (max-device-height: 960px)
   and (orientation: portrait) 
 {
-    /* FONT */
-    h2
-    {
-        font-size: 28px;  
-    }
-    h4
-    {
-        font-size: 24px;
-    }
-    h6
-    {
-        font-size: 20px;
-    }
-    p, a
-    {
-        font-size: 16px;
-    }
 
-    .logo
-    {
-        width: 36%;
-    }
-
-    .backg-167,
-    .backg-168,
-    .backg-169
-    {
-        padding-top: 180%; /* 10:18 */
-    }
 }
 
 @media only screen 
