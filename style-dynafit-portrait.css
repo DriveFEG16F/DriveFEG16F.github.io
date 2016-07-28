@@ -280,6 +280,10 @@
     {
         font-size: 16px;
     }
+    .box-footer p
+    {
+        font-size: 14px;
+    }
     .logo
     {
         width: 36%;
@@ -288,5 +292,4 @@
     {
         font-size: 24px;
     }
-
 }
