@@ -236,6 +236,22 @@ a:hover
 {
     color: rgb(32, 128, 192);
 }
+#index a:link, 
+#index a:visited,
+#index a:hover, 
+#index a:active,
+#index a:link h2, 
+#index a:visited h2,
+#index a:hover h2, 
+#index a:active h2,
+#index a:link p, 
+#index a:visited p,
+#index a:hover p, 
+#index a:active p
+{
+    text-decoration: none;
+}
+
 #index p span
 {
     font-weight: 500;

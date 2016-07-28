@@ -287,8 +287,8 @@
     .Company:last-child
     {
         display: block !important;
-        float:left;
         width: 100%;
+        float:left;
     }
     .logo
     {
