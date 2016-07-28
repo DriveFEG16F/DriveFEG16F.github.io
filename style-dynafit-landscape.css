@@ -6,9 +6,17 @@
   /* FONT */
   h2
   {
-    font-size: 32px;  
+      font-size: 28px;  
   }
-  p, a
+  h4
+  {
+      font-size: 24px;
+  }
+  h6, 
+  p, 
+  a, 
+  a.button,
+  th
   {
       font-size: 18px;
   }
@@ -18,11 +26,24 @@
   { 
       width: 12%;
   }
+    .color-ball
+  {
+      font-size: 26px;
+  }
 
   /* BACKGROUND */
   .backg-main
   {
       margin-bottom: 0;
+  }
+
+  /* 
+    BOX
+    INDEX
+  */
+  .box-row
+  {
+      width: 96%;
   }
 
   /* 
@@ -50,6 +71,18 @@
      margin-top: 7em; 
   }
 
+  /*
+    FERMI
+  */
+  #FERMI
+  {
+      width: 88%;
+  }
+  .box-row-fermi
+  {
+      width: 88%; 
+  }
+
   /* 
     BOX 
     VIDEO
@@ -74,6 +107,27 @@
   and (max-device-width: 800px)
   and (orientation: landscape) 
 {
+  /* FONT */
+  h2
+  {
+      font-size: 28px;  
+  }
+  h4
+  {
+      font-size: 20px;
+  }
+  h6, 
+  p, 
+  a, 
+  a.button,
+  th
+  {
+      font-size: 16px;
+  }
+  .color-ball
+  {
+      font-size: 24px;
+  }
   .logo
   { 
       width: 16%;
@@ -139,6 +193,20 @@
   .box-row-subpage-2nd > .box-section:last-child > #last 
   {
       padding: 8% 8% 0 8%;
+  }
+
+  .box-row-fermi
+  {
+    width: 96%; 
+  }
+  .float-left .box-product,
+  .float-right .box-product
+  {
+      padding: 8% 16% 12% 16%;
+  }
+  table
+  {
+      margin-top: 15%;
   }
 
 }

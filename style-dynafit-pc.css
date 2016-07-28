@@ -1,11 +1,20 @@
 /* PC */
 @media (min-width: 1281px) and (max-width: 1366px)
 {
+  /* FONT */
   h2
   {
-    font-size: 36px;  
+      font-size: 36px;  
   }
-  p, a
+  h4
+  {
+      font-size: 24px;
+  }
+  h6, 
+  p, 
+  a, 
+  a.button,
+  th
   {
       font-size: 18px;
   }
@@ -50,13 +59,22 @@
 }
 @media (min-width: 1025px) and (max-width: 1280px)
 {
+  /* FONT */
   h2
   {
-    font-size: 32px;  
+      font-size: 36px;  
   }
-  p
+  h4
   {
-      font-size: 16px;
+      font-size: 24px;
+  }
+  h6, 
+  p, 
+  a, 
+  a.button,
+  th
+  {
+      font-size: 18px;
   }
   .logo
   {
@@ -113,13 +131,27 @@
   /*
     FERMI
   */
-  #icon-heart
-  {
-      padding: 0 0 0 4%;
-  }
+
 }
 @media (min-width: 961px) and (max-width: 1024px)
 {
+  /* FONT */
+  h2
+  {
+      font-size: 36px;  
+  }
+  h4
+  {
+      font-size: 24px;
+  }
+  h6, 
+  p, 
+  a, 
+  a.button,
+  th
+  {
+      font-size: 16px;
+  }
   .logo
   {
       width: 12%;

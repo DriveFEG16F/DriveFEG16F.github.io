@@ -158,6 +158,7 @@ a:hover
 }
 .keyvisual-index-fermi
 {
+    padding-top: 50%;
     background-image: url("images/index-fermi.jpg");
 }
 .keyvisual-fermi
@@ -233,7 +234,7 @@ a:hover
 #index a:hover h2,
 #index a:hover p
 {
-    color: #666666;
+    color: rgb(32, 128, 192);
 }
 #index p span
 {
@@ -276,7 +277,7 @@ a:hover
 #prologue a,
 .box-content a
 {
-    color: rgb(0, 128, 224);
+    color: rgb(32, 128, 192);
 }
 #prologue a:hover,
 .box-content a:hover
@@ -419,11 +420,13 @@ a:hover
 {
     float: left;
 }
-#icon-heart
+.box-row-fermi
 {
-    float: right;
-    padding: 0 8% 0 8%;
-    max-width: 500px;
+    position: relative;
+    overflow: auto;
+    width: 80%;
+    margin-top: 8%;
+    margin-bottom: 4%;    
 }
 
 #VIP p span

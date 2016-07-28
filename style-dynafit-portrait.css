@@ -3,37 +3,13 @@
   and (max-device-width: 1024px)
   and (orientation: portrait) 
 {
-    /* FONT */
-    h2
-    {
-        font-size: 28px;  
-    }
-    h4
-    {
-        font-size: 24px;
-    }
-    h6
-    {
-        font-size: 20px;
-    }
-    p, a
-    {
-        font-size: 16px;
-    }
-
-    .logo
-    {
-        width: 36%;
-    }
-
+    /* BACKGROUND */
     .backg-167,
     .backg-168,
     .backg-169
     {
         padding-top: 140%; /* 10:18 */
     }
-
-    /* BACKGROUND */
     .backg-main
     {
         margin-bottom: 4%;
@@ -54,7 +30,7 @@
     }
     .keyvisual-index-fermi
     {
-        background-image: url("images/index-fermi-m.jpg");
+        padding-top: 62.5%; /* 16:10 */
     }
     .keyvisual-fermi
     {
@@ -106,7 +82,8 @@
     }
     .box-row,
     .box-row-subpage,
-    .box-row-video
+    .box-row-video,
+    .box-row-fermi
     {
         width: 96%;
     }
@@ -181,10 +158,6 @@
     {
         clear: left;
     }
-    #icon-heart
-    {
-        
-    }
 
 
     /* 
@@ -212,13 +185,9 @@
     /* BUTTON */
     a.button
     {
-        padding: 4px 0 4px 0; /* T R B L */
-        font-size: 16px;
-        margin-left: auto;
-        margin-right: auto;
+        /*font-size: 16px;*/
         width: 80%;
     }
-
 
     .float-left
     {
@@ -233,8 +202,8 @@
 
     a.button:link, a.button:visited
     {
-/*        margin-top: 15%;
-        width: 80%;*/
+        /*margin-top: 15%;*/
+        /*width: 80%;*/
     }
     table
     {
@@ -242,11 +211,7 @@
     }
     th
     {
-        font-size: 16px;
-    }
-    .color-ball
-    {
-        font-size: 28px;
+        /*font-size: 16px;*/
     }
 
 }
@@ -260,49 +225,68 @@
  
 }
 
-@media only screen 
-  and (min-device-height: 961px)
+@media only screen /* iPad */
+  and (min-device-height: 768px)
   and (max-device-height: 1024px)
   and (orientation: portrait) 
 {
-
+    /* FONT */
+    h2
+    {
+        font-size: 32px;  
+    }
+    h4
+    {
+        font-size: 24px;
+    }
+    h6, 
+    p, 
+    a, 
+    a.button,
+    th
+    {
+        font-size: 18px;
+    }
+    .logo
+    {
+        width: 20%;
+    }
+    .color-ball
+    {
+        font-size: 28px;
+    }
 }
 
 @media only screen 
-  /*and (min-device-height: 769px)*/
-  and (max-device-height: 960px)
+  /*and (min-device-height: 660px)*/
+  and (max-device-height: 767px)
   and (orientation: portrait) 
 {
 
-}
+    /* FONT */
+    h2
+    {
+        font-size: 28px;  
+    }
+    h4
+    {
+        font-size: 20px;
+    }
+    h6, 
+    p, 
+    a, 
+    a.button,
+    th
+    {
+        font-size: 16px;
+    }
+    .logo
+    {
+        width: 36%;
+    }
+    .color-ball
+    {
+        font-size: 24px;
+    }
 
-@media only screen 
-  and (min-device-height: 661px)
-  and (max-device-height: 768px)
-  and (orientation: portrait) 
-{
-
-}
-
-@media only screen 
-  and (min-device-height: 481px)
-  and (max-device-height: 660px)
-  and (orientation: portrait) 
-{
-
-}
-
-
-@media only screen 
-  and (max-device-height: 480px)
-  and (orientation: portrait) 
-{
-
-}
-
-@media only screen 
-  and (min-device-width: 0px) 
-  and (max-device-width: 320px)
-  and (orientation: portrait) 
-{
 }
