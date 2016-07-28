@@ -2,7 +2,9 @@ var videoDuration;
 var clipDuration;
 var startingPoint;
 var frame;
-var moveX;
+var threshold = 0;
+var moveX = 0;
+var dX = 0;
 var fps = 25;
 var num = 24; // Numbers of Video Clips
 
@@ -63,28 +65,33 @@ function rotateMouseMove(event)
 {
     if(started)
     {
-        moveX = event.clientX - startingPoint;
+        dX = event.clientX - startingPoint;
 
-        if(moveX != 0)
+        moveX = moveX + dX;
+
+        if(Math.abs(moveX) > 5)
         {
-            moveX = moveX / Math.abs(moveX);    
+            threshold = moveX / Math.abs(moveX);  
+            moveX =  0; 
         }
 
         console.log("moveX: " + moveX);
 
-        indx = indx + moveX;
+        indx = indx + threshold;
 
         if (indx < 1)
         {
-            indx = 24 + moveX;
+            indx = 24 + threshold;
         } 
         else if ( indx > 23 )
         {
-            indx = 0 + moveX; 
+            indx = 0 + threshold; 
         }
 
         imageHolder.style.backgroundImage = "url(" + imageArray[indx].src + ")";
         // image360.src = imageArray[indx].src;
+
+        threshold = 0;
         startingPoint = event.clientX;  
     }
 }
@@ -93,28 +100,32 @@ function rotateTouchMove(event)
 {
     event.preventDefault();
 
-    moveX = event.changedTouches[0].clientX - startingPoint;
+    dX = event.changedTouches[0].clientX - startingPoint;
 
-    if(moveX != 0)
+    moveX = moveX + dX;
+
+    if(Math.abs(moveX) > 5)
     {
-        moveX = moveX / Math.abs(moveX);    
+        threshold = moveX / Math.abs(moveX);  
+        moveX =  0;    
     }
 
     console.log("moveX: " + moveX);
 
-    indx = indx + moveX;
+    indx = indx + threshold;
     
     if (indx < 1)
     {
-        indx = 24 + moveX;
+        indx = 24 + threshold;
     } 
     else if ( indx > 23 )
     {
-        indx = 0 + moveX; 
+        indx = 0 + threshold; 
     }
 
     imageHolder.style.backgroundImage = "url(" + imageArray[indx].src + ")";
     // image360.src = imageArray[indx].src;
 
+    threshold = 0;
     startingPoint = event.changedTouches[0].clientX; 
 }
