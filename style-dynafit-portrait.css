@@ -284,6 +284,11 @@
     {
         font-size: 14px;
     }
+    .Company:last-child
+    {
+        display: block !important;
+        width: 100%;
+    }
     .logo
     {
         width: 36%;
