@@ -96,6 +96,14 @@ a
 }
 a:hover
 {
+    color: rgb(32, 128, 192);
+    text-decoration: none;
+}
+a:link, 
+a:visited,
+a:hover, 
+a:active
+{
     text-decoration: none;
 }
 
